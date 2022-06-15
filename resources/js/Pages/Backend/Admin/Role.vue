@@ -8,8 +8,6 @@ import Input from "@/Components/Input.vue";
 import InputError from "@/Components/InputError.vue";
 </script>
 <script>
-import axios from "axios";
-
 export default {
   components: {},
   data() {
@@ -50,7 +48,7 @@ export default {
         order_by: this.order_by,
         order_type: this.order_type,
       };
-      axios.post("/admin/role/listing", postData).then((response) => {
+      this.$api.getRole(postData).then((response) => {
         if (response.status == 200 && response.data && response.data.data) {
           this.items = response.data.data;
           this.filtered = response.data.recordsFiltered;
@@ -82,8 +80,8 @@ export default {
     },
     confirmDelete() {
       let vm = this;
-      axios
-        .post("/admin/role/" + vm.selectedRole.id + "/delete")
+      this.$api
+        .deleteRole(vm.selectedRole.id)
         .then((response) => {
           vm.submiting = false;
           if (
@@ -148,11 +146,8 @@ export default {
       }
       vm.errorMsg.name = "";
       vm.submiting = true;
-      axios
-        .post(
-          "/admin/role/" + vm.modalTextConfirm.toLowerCase(),
-          vm.selectedRole
-        )
+      this.$api
+        .storeRole(vm.selectedRole)
         .then((response) => {
           vm.submiting = false;
           if (
@@ -269,7 +264,8 @@ export default {
               "
               title=""
             >
-              <img class="w-3 mt-2 mx-1" src="/imgs/plus-white.png" /> Add
+              <img class="w-3 mt-2 mx-1" src="/imgs/plus-white.png" />
+              Add
             </button>
           </div>
 

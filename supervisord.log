@@ -3054,3 +3054,63 @@
 2022-06-15 03:30:36,282 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2022-06-15 03:30:36,282 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2022-06-15 03:30:37,283 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 13:15:42,276 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-06-15 13:15:42,278 INFO supervisord started with pid 1
+2022-06-15 13:15:43,280 INFO spawned: 'laravel_queue_00' with pid 7
+2022-06-15 13:15:43,281 INFO spawned: 'laravel_queue_01' with pid 8
+2022-06-15 13:15:43,282 INFO spawned: 'laravel_queue_02' with pid 9
+2022-06-15 13:15:43,283 INFO spawned: 'laravel_queue_03' with pid 10
+2022-06-15 13:15:43,284 INFO spawned: 'laravel_schedule_00' with pid 11
+2022-06-15 13:15:43,300 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 13:15:43,300 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 13:15:43,300 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 13:15:43,300 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 13:15:43,300 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 13:15:44,302 INFO spawned: 'laravel_queue_00' with pid 12
+2022-06-15 13:15:44,303 INFO spawned: 'laravel_queue_01' with pid 13
+2022-06-15 13:15:44,304 INFO spawned: 'laravel_queue_02' with pid 14
+2022-06-15 13:15:44,305 INFO spawned: 'laravel_queue_03' with pid 15
+2022-06-15 13:15:44,306 INFO spawned: 'laravel_schedule_00' with pid 16
+2022-06-15 13:15:44,336 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 13:15:44,336 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 13:15:44,336 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 13:15:44,336 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 13:15:44,336 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 13:15:46,339 INFO spawned: 'laravel_queue_00' with pid 17
+2022-06-15 13:15:46,341 INFO spawned: 'laravel_queue_01' with pid 18
+2022-06-15 13:15:46,342 INFO spawned: 'laravel_queue_02' with pid 19
+2022-06-15 13:15:46,343 INFO spawned: 'laravel_queue_03' with pid 20
+2022-06-15 13:15:46,344 INFO spawned: 'laravel_schedule_00' with pid 21
+2022-06-15 13:15:46,359 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 13:15:46,359 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 13:15:46,359 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 13:15:46,359 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 13:15:46,360 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 13:15:49,363 INFO spawned: 'laravel_queue_00' with pid 22
+2022-06-15 13:15:49,364 INFO spawned: 'laravel_queue_01' with pid 23
+2022-06-15 13:15:49,365 INFO spawned: 'laravel_queue_02' with pid 24
+2022-06-15 13:15:49,366 INFO spawned: 'laravel_queue_03' with pid 25
+2022-06-15 13:15:49,367 INFO spawned: 'laravel_schedule_00' with pid 26
+2022-06-15 13:15:49,376 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 13:15:49,376 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 13:15:49,376 INFO gave up: laravel_queue_00 entered FATAL state, too many start retries too quickly
+2022-06-15 13:15:49,376 INFO gave up: laravel_queue_01 entered FATAL state, too many start retries too quickly
+2022-06-15 13:15:49,376 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 13:15:49,377 INFO gave up: laravel_queue_02 entered FATAL state, too many start retries too quickly
+2022-06-15 13:15:49,377 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 13:15:49,377 INFO gave up: laravel_queue_03 entered FATAL state, too many start retries too quickly
+2022-06-15 13:15:49,378 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 13:15:50,379 INFO gave up: laravel_schedule_00 entered FATAL state, too many start retries too quickly
+2022-06-15 13:19:10,590 WARN received SIGQUIT indicating exit request
+2022-06-15 13:20:13,660 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-06-15 13:20:13,665 INFO supervisord started with pid 1
+2022-06-15 13:20:14,668 INFO spawned: 'laravel_queue_00' with pid 6
+2022-06-15 13:20:14,671 INFO spawned: 'laravel_queue_01' with pid 7
+2022-06-15 13:20:14,673 INFO spawned: 'laravel_queue_02' with pid 8
+2022-06-15 13:20:14,680 INFO spawned: 'laravel_queue_03' with pid 9
+2022-06-15 13:20:14,689 INFO spawned: 'laravel_schedule_00' with pid 10
+2022-06-15 13:20:15,956 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 13:20:15,956 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 13:20:15,956 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 13:20:15,956 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 13:20:15,956 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

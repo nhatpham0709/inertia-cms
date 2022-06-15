@@ -285,7 +285,6 @@ export default {
                     v-model="length"
                     @change="initTablePermissions"
                     class="
-                      appearance-none
                       h-full
                       rounded-l
                       border

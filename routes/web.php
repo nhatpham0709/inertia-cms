@@ -25,8 +25,4 @@ Route::get('/', function () {
     ]);
 });
 
-Route::group(['middleare' => ['auth', 'verified']], function () {
-    UIUtils::includeRouteFiles(__DIR__ . '/backend');
-});
-
 require __DIR__ . '/auth.php';
