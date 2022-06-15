@@ -11,15 +11,16 @@ use Inertia\Inertia;
 
 class PermissionController extends Controller
 {
-    private $permissionServices;
+    private PermissionServices $permissionServices;
 
     public function __construct(PermissionServices $permissionServices)
     {
         $this->permissionServices = $permissionServices;
     }
 
-    public function index(){
-        return Inertia::render('Backend/Admin/Permission'); 
+    public function index()
+    {
+        return Inertia::render('Backend/Admin/Permission');
     }
 
     public function listing(Request $request)

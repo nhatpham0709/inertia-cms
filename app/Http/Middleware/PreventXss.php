@@ -21,6 +21,7 @@ class PreventXss
             $input = strip_tags($input);
         });
         $request->merge($input);
+        
         return $next($request);
     }
 }

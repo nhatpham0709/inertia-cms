@@ -39,7 +39,7 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        $user = User::where('email', StringUtils::validate_input($request->input('email')))->first();
+        $user = User::where('email', StringUtils::validateInput($request->input('email')))->first();
         if ($user) {
             $user->last_login = date('Y-m-d H:i:s');
             $user->save();
@@ -61,6 +61,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect('/login');
     }
 }

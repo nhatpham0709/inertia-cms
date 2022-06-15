@@ -2,7 +2,6 @@
 
 namespace App\Repositories\Backend\Admin;
 
-
 use App\Models\Role;
 use App\Repositories\BaseRepository;
 
@@ -16,7 +15,6 @@ class RoleRepository extends BaseRepository
      */
     public function model()
     {
-        // TODO: Implement model() method.
         return Role::class;
     }
 

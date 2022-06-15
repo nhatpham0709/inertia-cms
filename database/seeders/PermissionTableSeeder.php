@@ -34,6 +34,5 @@ class PermissionTableSeeder extends Seeder
                 'description' => 'Admin manages permissions'
             ]
         ]);
-
     }
 }

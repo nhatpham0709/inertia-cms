@@ -50,7 +50,7 @@ export default {
         order_by: this.order_by,
         order_type: this.order_type,
       };
-      axios.post("/backend/admin/role/listing", postData).then((response) => {
+      axios.post("/admin/role/listing", postData).then((response) => {
         if (response.status == 200 && response.data && response.data.data) {
           this.items = response.data.data;
           this.filtered = response.data.recordsFiltered;
@@ -83,7 +83,7 @@ export default {
     confirmDelete() {
       let vm = this;
       axios
-        .post("/backend/admin/role/" + vm.selectedRole.id + "/delete")
+        .post("/admin/role/" + vm.selectedRole.id + "/delete")
         .then((response) => {
           vm.submiting = false;
           if (
@@ -150,7 +150,7 @@ export default {
       vm.submiting = true;
       axios
         .post(
-          "/backend/admin/role/" + vm.modalTextConfirm.toLowerCase(),
+          "/admin/role/" + vm.modalTextConfirm.toLowerCase(),
           vm.selectedRole
         )
         .then((response) => {

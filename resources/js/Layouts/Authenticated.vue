@@ -21,7 +21,7 @@ const showingNavigationDropdown = ref(false);
             <div class="flex">
               <!-- Logo -->
               <div class="shrink-0 flex items-center">
-                <Link :href="route('backend.admin.dashboard.index')">
+                <Link :href="route('admin.dashboard.index')">
                   <BreezeApplicationLogo class="block h-9 w-auto" />
                 </Link>
               </div>
@@ -29,32 +29,32 @@ const showingNavigationDropdown = ref(false);
               <!-- Navigation Links -->
               <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                 <BreezeNavLink
-                  :href="route('backend.admin.dashboard.index')"
-                  :active="route().current('backend.admin.dashboard.index')"
+                  :href="route('admin.dashboard.index')"
+                  :active="route().current('admin.dashboard.index')"
                 >
                   Dashboard
                 </BreezeNavLink>
               </div>
               <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                 <BreezeNavLink
-                  :href="route('backend.admin.user.index')"
-                  :active="route().current('backend.admin.user.index')"
+                  :href="route('admin.user.index')"
+                  :active="route().current('admin.user.index')"
                 >
                   User management
                 </BreezeNavLink>
               </div>
               <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                 <BreezeNavLink
-                  :href="route('backend.admin.role.index')"
-                  :active="route().current('backend.admin.role.index')"
+                  :href="route('admin.role.index')"
+                  :active="route().current('admin.role.index')"
                 >
                   Role management
                 </BreezeNavLink>
               </div>
               <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                 <BreezeNavLink
-                  :href="route('backend.admin.permission.index')"
-                  :active="route().current('backend.admin.permission.index')"
+                  :href="route('admin.permission.index')"
+                  :active="route().current('admin.permission.index')"
                 >
                   Permission management
                 </BreezeNavLink>
@@ -179,32 +179,32 @@ const showingNavigationDropdown = ref(false);
         >
           <div class="pt-2 pb-3 space-y-1">
             <BreezeResponsiveNavLink
-              :href="route('backend.admin.dashboard.index')"
-              :active="route().current('backend.admin.dashboard.index')"
+              :href="route('admin.dashboard.index')"
+              :active="route().current('admin.dashboard.index')"
             >
               Dashboard
             </BreezeResponsiveNavLink>
           </div>
           <div class="pt-2 pb-3 space-y-1">
             <BreezeResponsiveNavLink
-              :href="route('backend.admin.user.index')"
-              :active="route().current('backend.admin.user.index')"
+              :href="route('admin.user.index')"
+              :active="route().current('admin.user.index')"
             >
               User management
             </BreezeResponsiveNavLink>
           </div>
             <div class="pt-2 pb-3 space-y-1">
             <BreezeResponsiveNavLink
-              :href="route('backend.admin.role.index')"
-              :active="route().current('backend.admin.role.index')"
+              :href="route('admin.role.index')"
+              :active="route().current('admin.role.index')"
             >
               Role management
             </BreezeResponsiveNavLink>
           </div>
           <div class="pt-2 pb-3 space-y-1">
             <BreezeResponsiveNavLink
-              :href="route('backend.admin.permission.index')"
-              :active="route().current('backend.admin.permission.index')"
+              :href="route('admin.permission.index')"
+              :active="route().current('admin.permission.index')"
             >
               Permission management
             </BreezeResponsiveNavLink>

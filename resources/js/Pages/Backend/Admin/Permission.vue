@@ -53,7 +53,7 @@ export default {
         order_type: this.order_type,
       };
       axios
-        .post("/backend/admin/permission/listing", postData)
+        .post("/admin/permission/listing", postData)
         .then((response) => {
           if (response.status == 200 && response.data && response.data.data) {
             this.items = response.data.data;
@@ -88,7 +88,7 @@ export default {
       let vm = this;
       axios
         .post(
-          "/backend/admin/permission/" + vm.selectedPermission.id + "/delete"
+          "/admin/permission/" + vm.selectedPermission.id + "/delete"
         )
         .then((response) => {
           vm.submiting = false;
@@ -156,7 +156,7 @@ export default {
       vm.submiting = true;
       axios
         .post(
-          "/backend/admin/permission/" + vm.modalTextConfirm.toLowerCase(),
+          "/admin/permission/" + vm.modalTextConfirm.toLowerCase(),
           vm.selectedPermission
         )
         .then((response) => {

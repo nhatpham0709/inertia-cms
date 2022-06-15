@@ -8,16 +8,15 @@
 
 namespace App\Utils;
 
-
 class StringUtils
 {
 
-    public static function validate_input($str)
+    public static function validateInput($str)
     {
         return strip_tags(trim($str));
     }
 
-    public static function random_string($length)
+    public static function randomString($length)
     {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
@@ -28,7 +27,7 @@ class StringUtils
         return $randomString;
     }
 
-    public static function query_to_sql($sql)
+    public static function queryToSql($sql)
     {
         try {
             $arrBindings = $sql->getBindings();

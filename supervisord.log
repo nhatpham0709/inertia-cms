@@ -1373,3 +1373,1684 @@
 2022-06-15 02:04:29,042 INFO spawned: 'laravel_queue_03' with pid 3212
 2022-06-15 02:04:30,044 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2022-06-15 02:04:30,044 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 02:18:43,196 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-06-15 02:18:43,198 INFO supervisord started with pid 1
+2022-06-15 02:18:44,200 INFO spawned: 'laravel_queue_00' with pid 7
+2022-06-15 02:18:44,201 INFO spawned: 'laravel_queue_01' with pid 8
+2022-06-15 02:18:44,202 INFO spawned: 'laravel_queue_02' with pid 9
+2022-06-15 02:18:44,203 INFO spawned: 'laravel_queue_03' with pid 10
+2022-06-15 02:18:44,204 INFO spawned: 'laravel_schedule_00' with pid 11
+2022-06-15 02:18:45,315 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 02:18:45,315 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 02:18:45,315 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 02:18:45,315 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 02:18:45,316 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:25,973 WARN received SIGQUIT indicating exit request
+2022-06-15 03:11:25,992 INFO waiting for laravel_queue_00, laravel_queue_01, laravel_queue_02, laravel_queue_03, laravel_schedule_00 to die
+2022-06-15 03:11:26,004 INFO stopped: laravel_schedule_00 (terminated by SIGTERM)
+2022-06-15 03:11:27,093 INFO stopped: laravel_queue_00 (exit status 0)
+2022-06-15 03:11:27,093 INFO stopped: laravel_queue_01 (exit status 0)
+2022-06-15 03:11:27,093 INFO stopped: laravel_queue_02 (exit status 0)
+2022-06-15 03:11:27,093 INFO stopped: laravel_queue_03 (exit status 0)
+2022-06-15 03:11:46,965 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-06-15 03:11:46,967 INFO supervisord started with pid 1
+2022-06-15 03:11:47,972 INFO spawned: 'laravel_queue_00' with pid 7
+2022-06-15 03:11:47,976 INFO spawned: 'laravel_queue_01' with pid 8
+2022-06-15 03:11:47,977 INFO spawned: 'laravel_queue_02' with pid 9
+2022-06-15 03:11:47,978 INFO spawned: 'laravel_queue_03' with pid 10
+2022-06-15 03:11:47,980 INFO spawned: 'laravel_schedule_00' with pid 11
+2022-06-15 03:11:48,981 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:48,981 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:48,981 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:48,981 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:48,981 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:49,295 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:11:49,295 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:11:49,317 INFO spawned: 'laravel_queue_01' with pid 12
+2022-06-15 03:11:49,318 INFO spawned: 'laravel_queue_02' with pid 13
+2022-06-15 03:11:49,319 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:11:49,328 INFO spawned: 'laravel_queue_03' with pid 14
+2022-06-15 03:11:49,329 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:11:50,332 INFO spawned: 'laravel_queue_00' with pid 15
+2022-06-15 03:11:50,332 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:50,332 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:50,332 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:50,332 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:11:50,486 INFO spawned: 'laravel_schedule_00' with pid 16
+2022-06-15 03:11:50,497 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:11:51,498 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:51,499 INFO spawned: 'laravel_queue_01' with pid 17
+2022-06-15 03:11:51,499 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:51,499 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:11:51,500 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:11:51,515 INFO spawned: 'laravel_queue_02' with pid 18
+2022-06-15 03:11:51,517 INFO spawned: 'laravel_queue_03' with pid 19
+2022-06-15 03:11:51,665 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:11:52,667 INFO spawned: 'laravel_queue_00' with pid 20
+2022-06-15 03:11:52,667 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:52,667 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:52,667 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:52,667 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:11:52,682 INFO spawned: 'laravel_schedule_00' with pid 21
+2022-06-15 03:11:53,687 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:53,687 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:53,687 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:11:53,687 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:11:53,687 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:11:53,850 INFO spawned: 'laravel_queue_01' with pid 22
+2022-06-15 03:11:53,851 INFO spawned: 'laravel_queue_02' with pid 23
+2022-06-15 03:11:53,852 INFO spawned: 'laravel_queue_03' with pid 24
+2022-06-15 03:11:54,853 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:54,853 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:54,866 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:54,866 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:11:54,866 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:11:55,007 INFO spawned: 'laravel_queue_00' with pid 25
+2022-06-15 03:11:55,009 INFO spawned: 'laravel_schedule_00' with pid 26
+2022-06-15 03:11:55,063 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:11:55,069 INFO spawned: 'laravel_queue_02' with pid 27
+2022-06-15 03:11:56,071 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:56,071 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:56,071 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:56,071 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:11:56,071 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:11:56,162 INFO spawned: 'laravel_queue_01' with pid 28
+2022-06-15 03:11:56,163 INFO spawned: 'laravel_queue_03' with pid 29
+2022-06-15 03:11:56,196 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:11:56,234 INFO spawned: 'laravel_schedule_00' with pid 30
+2022-06-15 03:11:56,234 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:11:57,238 INFO spawned: 'laravel_queue_00' with pid 31
+2022-06-15 03:11:57,238 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:57,238 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:57,238 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:57,238 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:11:57,370 INFO spawned: 'laravel_queue_02' with pid 32
+2022-06-15 03:11:57,391 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:11:57,392 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:11:58,393 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:58,394 INFO spawned: 'laravel_queue_01' with pid 33
+2022-06-15 03:11:58,394 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:58,395 INFO spawned: 'laravel_queue_03' with pid 34
+2022-06-15 03:11:58,396 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:11:58,400 INFO spawned: 'laravel_schedule_00' with pid 35
+2022-06-15 03:11:58,550 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:11:59,552 INFO spawned: 'laravel_queue_00' with pid 36
+2022-06-15 03:11:59,553 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:59,553 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:59,553 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:11:59,553 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:11:59,556 INFO spawned: 'laravel_queue_02' with pid 37
+2022-06-15 03:11:59,563 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:00,565 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:00,565 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:00,566 INFO spawned: 'laravel_schedule_00' with pid 38
+2022-06-15 03:12:00,567 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:00,567 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:00,721 INFO spawned: 'laravel_queue_01' with pid 39
+2022-06-15 03:12:00,723 INFO spawned: 'laravel_queue_03' with pid 40
+2022-06-15 03:12:00,733 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:01,728 INFO spawned: 'laravel_queue_00' with pid 41
+2022-06-15 03:12:01,729 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:01,729 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:01,729 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:01,729 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:01,887 INFO spawned: 'laravel_queue_02' with pid 42
+2022-06-15 03:12:01,888 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:01,901 INFO spawned: 'laravel_schedule_00' with pid 43
+2022-06-15 03:12:01,901 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:02,903 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:02,904 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:02,905 INFO spawned: 'laravel_queue_03' with pid 44
+2022-06-15 03:12:02,905 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:02,905 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:02,925 INFO spawned: 'laravel_queue_01' with pid 45
+2022-06-15 03:12:03,054 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:03,079 INFO spawned: 'laravel_queue_00' with pid 46
+2022-06-15 03:12:03,080 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:04,081 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:04,081 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:04,082 INFO spawned: 'laravel_queue_02' with pid 47
+2022-06-15 03:12:04,082 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:04,082 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:04,132 INFO spawned: 'laravel_schedule_00' with pid 48
+2022-06-15 03:12:04,133 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:04,266 INFO spawned: 'laravel_queue_01' with pid 49
+2022-06-15 03:12:04,267 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:05,245 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:05,246 INFO spawned: 'laravel_queue_03' with pid 50
+2022-06-15 03:12:05,246 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:05,246 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:05,321 INFO spawned: 'laravel_queue_00' with pid 51
+2022-06-15 03:12:05,321 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:05,322 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:05,451 INFO spawned: 'laravel_queue_02' with pid 52
+2022-06-15 03:12:05,451 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:06,430 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:06,431 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:06,432 INFO spawned: 'laravel_schedule_00' with pid 53
+2022-06-15 03:12:06,432 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:06,505 INFO spawned: 'laravel_queue_01' with pid 54
+2022-06-15 03:12:06,505 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:06,505 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:06,654 INFO spawned: 'laravel_queue_03' with pid 55
+2022-06-15 03:12:06,654 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:07,658 INFO spawned: 'laravel_queue_00' with pid 56
+2022-06-15 03:12:07,658 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:07,658 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:07,658 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:07,659 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:07,774 INFO spawned: 'laravel_queue_02' with pid 57
+2022-06-15 03:12:07,914 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:08,084 INFO spawned: 'laravel_schedule_00' with pid 58
+2022-06-15 03:12:08,084 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:08,957 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:08,959 INFO spawned: 'laravel_queue_01' with pid 59
+2022-06-15 03:12:08,959 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:08,959 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:08,995 INFO spawned: 'laravel_queue_03' with pid 60
+2022-06-15 03:12:08,995 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:09,303 INFO spawned: 'laravel_queue_00' with pid 61
+2022-06-15 03:12:09,303 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:09,303 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:10,275 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:10,276 INFO spawned: 'laravel_queue_02' with pid 62
+2022-06-15 03:12:10,277 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:10,277 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:10,311 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:10,313 INFO spawned: 'laravel_schedule_00' with pid 63
+2022-06-15 03:12:10,313 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:10,589 INFO spawned: 'laravel_queue_01' with pid 64
+2022-06-15 03:12:10,590 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:11,591 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:11,592 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:11,593 INFO spawned: 'laravel_queue_03' with pid 65
+2022-06-15 03:12:11,593 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:11,593 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:11,600 INFO spawned: 'laravel_queue_00' with pid 66
+2022-06-15 03:12:11,662 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:11,922 INFO spawned: 'laravel_queue_02' with pid 67
+2022-06-15 03:12:11,922 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:12,890 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:12,890 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:12,891 INFO spawned: 'laravel_schedule_00' with pid 68
+2022-06-15 03:12:12,892 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:12,915 INFO spawned: 'laravel_queue_01' with pid 69
+2022-06-15 03:12:12,916 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:13,204 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:13,206 INFO spawned: 'laravel_queue_03' with pid 70
+2022-06-15 03:12:13,206 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:14,209 INFO spawned: 'laravel_queue_00' with pid 71
+2022-06-15 03:12:14,209 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:14,209 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:14,209 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:14,209 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:14,237 INFO spawned: 'laravel_queue_02' with pid 72
+2022-06-15 03:12:14,334 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:14,578 INFO spawned: 'laravel_queue_01' with pid 73
+2022-06-15 03:12:14,579 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:15,560 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:15,560 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:15,561 INFO spawned: 'laravel_schedule_00' with pid 74
+2022-06-15 03:12:15,562 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:15,632 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:15,634 INFO spawned: 'laravel_queue_03' with pid 75
+2022-06-15 03:12:15,634 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:15,964 INFO spawned: 'laravel_queue_00' with pid 76
+2022-06-15 03:12:15,964 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:16,923 INFO spawned: 'laravel_queue_02' with pid 77
+2022-06-15 03:12:16,923 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:16,923 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:16,923 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:17,060 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:17,062 INFO spawned: 'laravel_queue_01' with pid 78
+2022-06-15 03:12:17,062 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:17,370 INFO spawned: 'laravel_schedule_00' with pid 79
+2022-06-15 03:12:17,370 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:18,286 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:18,286 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:18,287 INFO spawned: 'laravel_queue_03' with pid 80
+2022-06-15 03:12:18,287 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:18,420 INFO spawned: 'laravel_queue_00' with pid 81
+2022-06-15 03:12:18,421 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:18,421 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:18,756 INFO spawned: 'laravel_queue_02' with pid 82
+2022-06-15 03:12:18,756 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:19,628 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:19,630 INFO spawned: 'laravel_queue_01' with pid 83
+2022-06-15 03:12:19,630 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:19,630 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:19,965 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:19,967 INFO spawned: 'laravel_schedule_00' with pid 84
+2022-06-15 03:12:19,967 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:20,119 INFO spawned: 'laravel_queue_03' with pid 85
+2022-06-15 03:12:20,119 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:21,024 INFO spawned: 'laravel_queue_00' with pid 86
+2022-06-15 03:12:21,024 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:21,024 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:21,025 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:21,330 INFO spawned: 'laravel_queue_02' with pid 87
+2022-06-15 03:12:21,330 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:21,331 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:21,470 INFO spawned: 'laravel_queue_01' with pid 88
+2022-06-15 03:12:21,471 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:22,377 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:22,377 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:22,379 INFO spawned: 'laravel_schedule_00' with pid 89
+2022-06-15 03:12:22,379 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:22,772 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:22,773 INFO spawned: 'laravel_queue_03' with pid 90
+2022-06-15 03:12:22,774 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:22,841 INFO spawned: 'laravel_queue_00' with pid 91
+2022-06-15 03:12:22,841 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:23,742 INFO spawned: 'laravel_queue_02' with pid 92
+2022-06-15 03:12:23,742 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:23,742 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:24,122 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:24,124 INFO spawned: 'laravel_queue_01' with pid 93
+2022-06-15 03:12:24,124 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:24,124 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:24,264 INFO spawned: 'laravel_schedule_00' with pid 94
+2022-06-15 03:12:24,264 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:25,092 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:25,093 INFO spawned: 'laravel_queue_03' with pid 95
+2022-06-15 03:12:25,094 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:25,482 INFO spawned: 'laravel_queue_00' with pid 96
+2022-06-15 03:12:25,482 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:25,482 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:25,482 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:25,638 INFO spawned: 'laravel_queue_02' with pid 97
+2022-06-15 03:12:25,639 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:26,436 INFO spawned: 'laravel_queue_01' with pid 98
+2022-06-15 03:12:26,436 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:26,436 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:26,833 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:26,833 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:26,834 INFO spawned: 'laravel_schedule_00' with pid 99
+2022-06-15 03:12:26,834 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:26,938 INFO spawned: 'laravel_queue_03' with pid 100
+2022-06-15 03:12:26,939 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:27,835 INFO spawned: 'laravel_queue_00' with pid 101
+2022-06-15 03:12:27,835 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:27,835 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:27,835 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:28,177 INFO spawned: 'laravel_queue_02' with pid 102
+2022-06-15 03:12:28,177 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:28,178 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:28,283 INFO spawned: 'laravel_queue_01' with pid 103
+2022-06-15 03:12:28,283 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:29,286 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:29,288 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:29,288 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:29,291 INFO spawned: 'laravel_schedule_00' with pid 104
+2022-06-15 03:12:29,291 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:29,293 INFO spawned: 'laravel_queue_03' with pid 105
+2022-06-15 03:12:29,612 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:29,752 INFO spawned: 'laravel_queue_00' with pid 106
+2022-06-15 03:12:29,753 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:30,970 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:31,105 INFO spawned: 'laravel_queue_02' with pid 107
+2022-06-15 03:12:31,106 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:31,106 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:31,107 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:31,124 INFO spawned: 'laravel_queue_01' with pid 108
+2022-06-15 03:12:31,459 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:31,459 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:32,461 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:32,461 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:32,464 INFO spawned: 'laravel_queue_03' with pid 109
+2022-06-15 03:12:33,326 INFO spawned: 'laravel_schedule_00' with pid 110
+2022-06-15 03:12:33,330 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:34,334 INFO spawned: 'laravel_queue_00' with pid 111
+2022-06-15 03:12:34,334 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:34,335 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:35,336 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:43,089 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:43,089 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:44,562 INFO spawned: 'laravel_queue_01' with pid 112
+2022-06-15 03:12:44,564 INFO spawned: 'laravel_queue_02' with pid 113
+2022-06-15 03:12:44,564 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:44,564 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:44,564 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:45,568 INFO spawned: 'laravel_queue_00' with pid 114
+2022-06-15 03:12:45,568 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:45,568 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:45,571 INFO spawned: 'laravel_queue_03' with pid 115
+2022-06-15 03:12:46,308 INFO spawned: 'laravel_schedule_00' with pid 116
+2022-06-15 03:12:47,309 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:47,310 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:47,310 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:51,730 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:51,791 INFO spawned: 'laravel_queue_01' with pid 117
+2022-06-15 03:12:51,791 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:51,792 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:51,871 INFO spawned: 'laravel_queue_00' with pid 118
+2022-06-15 03:12:51,873 INFO spawned: 'laravel_queue_02' with pid 119
+2022-06-15 03:12:51,888 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:12:52,889 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:52,890 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:52,890 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:53,803 INFO spawned: 'laravel_schedule_00' with pid 120
+2022-06-15 03:12:53,954 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:12:54,960 INFO spawned: 'laravel_queue_03' with pid 121
+2022-06-15 03:12:55,671 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:56,673 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:57,003 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:12:57,047 INFO spawned: 'laravel_queue_00' with pid 122
+2022-06-15 03:12:57,048 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:12:58,049 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:12:58,052 INFO spawned: 'laravel_queue_02' with pid 123
+2022-06-15 03:12:58,053 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:12:59,738 INFO spawned: 'laravel_queue_01' with pid 124
+2022-06-15 03:12:59,738 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:00,740 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:01,302 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:01,940 INFO spawned: 'laravel_queue_03' with pid 125
+2022-06-15 03:13:01,941 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:02,133 INFO spawned: 'laravel_schedule_00' with pid 126
+2022-06-15 03:13:02,134 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:02,557 INFO spawned: 'laravel_queue_00' with pid 127
+2022-06-15 03:13:02,558 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:03,379 INFO spawned: 'laravel_queue_01' with pid 128
+2022-06-15 03:13:03,379 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:03,380 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:03,380 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:03,444 INFO spawned: 'laravel_queue_02' with pid 129
+2022-06-15 03:13:03,445 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:03,911 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:03,912 INFO spawned: 'laravel_queue_03' with pid 130
+2022-06-15 03:13:03,913 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:04,829 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:04,832 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:04,842 INFO spawned: 'laravel_schedule_00' with pid 131
+2022-06-15 03:13:04,842 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:05,216 INFO spawned: 'laravel_queue_00' with pid 132
+2022-06-15 03:13:05,216 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:05,216 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:05,216 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:06,220 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:06,225 INFO spawned: 'laravel_queue_01' with pid 133
+2022-06-15 03:13:06,226 INFO spawned: 'laravel_queue_02' with pid 134
+2022-06-15 03:13:06,226 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:06,226 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:06,235 INFO spawned: 'laravel_queue_03' with pid 135
+2022-06-15 03:13:06,385 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:07,385 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:07,386 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:07,386 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:07,387 INFO spawned: 'laravel_schedule_00' with pid 136
+2022-06-15 03:13:07,387 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:07,459 INFO spawned: 'laravel_queue_00' with pid 137
+2022-06-15 03:13:07,498 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:07,498 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:08,500 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:08,507 INFO spawned: 'laravel_queue_02' with pid 138
+2022-06-15 03:13:08,508 INFO spawned: 'laravel_queue_03' with pid 139
+2022-06-15 03:13:08,508 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:08,508 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:08,738 INFO spawned: 'laravel_queue_01' with pid 140
+2022-06-15 03:13:08,759 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:09,762 INFO spawned: 'laravel_queue_00' with pid 141
+2022-06-15 03:13:09,763 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:09,763 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:09,763 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:09,763 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:09,810 INFO spawned: 'laravel_schedule_00' with pid 142
+2022-06-15 03:13:09,811 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:09,833 INFO spawned: 'laravel_queue_03' with pid 143
+2022-06-15 03:13:10,008 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:11,004 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:11,005 INFO spawned: 'laravel_queue_02' with pid 144
+2022-06-15 03:13:11,005 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:11,005 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:11,005 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:11,011 INFO spawned: 'laravel_queue_01' with pid 145
+2022-06-15 03:13:11,023 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:11,023 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:12,026 INFO spawned: 'laravel_queue_00' with pid 146
+2022-06-15 03:13:12,026 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:12,026 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:12,027 INFO spawned: 'laravel_queue_03' with pid 147
+2022-06-15 03:13:12,028 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:12,192 INFO spawned: 'laravel_schedule_00' with pid 148
+2022-06-15 03:13:12,234 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:13,236 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:13,237 INFO spawned: 'laravel_queue_01' with pid 149
+2022-06-15 03:13:13,237 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:13,237 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:13,237 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:13,251 INFO spawned: 'laravel_queue_02' with pid 150
+2022-06-15 03:13:13,264 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:13,372 INFO spawned: 'laravel_queue_03' with pid 151
+2022-06-15 03:13:13,372 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:14,374 INFO spawned: 'laravel_queue_00' with pid 152
+2022-06-15 03:13:14,375 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:14,375 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:14,375 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:14,375 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:14,416 INFO spawned: 'laravel_schedule_00' with pid 153
+2022-06-15 03:13:14,441 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:14,531 INFO spawned: 'laravel_queue_01' with pid 154
+2022-06-15 03:13:14,532 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:15,533 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:15,534 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:15,534 INFO spawned: 'laravel_queue_02' with pid 155
+2022-06-15 03:13:15,535 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:15,535 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:15,561 INFO spawned: 'laravel_queue_03' with pid 156
+2022-06-15 03:13:15,613 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:15,707 INFO spawned: 'laravel_queue_00' with pid 157
+2022-06-15 03:13:15,707 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:16,709 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:16,709 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:16,709 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:16,711 INFO spawned: 'laravel_schedule_00' with pid 158
+2022-06-15 03:13:16,711 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:16,713 INFO spawned: 'laravel_queue_01' with pid 159
+2022-06-15 03:13:16,739 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:16,890 INFO spawned: 'laravel_queue_02' with pid 160
+2022-06-15 03:13:16,891 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:17,893 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:17,893 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:17,894 INFO spawned: 'laravel_queue_03' with pid 161
+2022-06-15 03:13:17,894 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:17,895 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:17,896 INFO spawned: 'laravel_queue_00' with pid 162
+2022-06-15 03:13:17,906 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:18,083 INFO spawned: 'laravel_schedule_00' with pid 163
+2022-06-15 03:13:18,084 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:19,063 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:19,064 INFO spawned: 'laravel_queue_01' with pid 164
+2022-06-15 03:13:19,065 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:19,065 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:19,076 INFO spawned: 'laravel_queue_02' with pid 165
+2022-06-15 03:13:19,077 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:19,274 INFO spawned: 'laravel_queue_03' with pid 166
+2022-06-15 03:13:19,274 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:19,274 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:20,227 INFO spawned: 'laravel_queue_00' with pid 167
+2022-06-15 03:13:20,227 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:20,228 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:20,228 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:20,251 INFO spawned: 'laravel_schedule_00' with pid 168
+2022-06-15 03:13:20,251 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:20,431 INFO spawned: 'laravel_queue_02' with pid 169
+2022-06-15 03:13:20,431 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:20,431 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:21,423 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:21,424 INFO spawned: 'laravel_queue_01' with pid 170
+2022-06-15 03:13:21,424 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:21,424 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:21,437 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:21,438 INFO spawned: 'laravel_queue_03' with pid 171
+2022-06-15 03:13:21,439 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:21,604 INFO spawned: 'laravel_schedule_00' with pid 172
+2022-06-15 03:13:21,604 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:22,601 INFO spawned: 'laravel_queue_00' with pid 173
+2022-06-15 03:13:22,601 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:22,602 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:22,602 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:22,614 INFO spawned: 'laravel_queue_02' with pid 174
+2022-06-15 03:13:22,614 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:22,614 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:22,778 INFO spawned: 'laravel_queue_03' with pid 175
+2022-06-15 03:13:22,778 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:23,779 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:23,780 INFO spawned: 'laravel_queue_01' with pid 176
+2022-06-15 03:13:23,780 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:23,780 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:23,780 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:23,782 INFO spawned: 'laravel_schedule_00' with pid 177
+2022-06-15 03:13:23,973 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:23,973 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:24,929 INFO spawned: 'laravel_queue_00' with pid 178
+2022-06-15 03:13:24,929 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:24,930 INFO spawned: 'laravel_queue_02' with pid 179
+2022-06-15 03:13:24,931 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:24,931 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:24,968 INFO spawned: 'laravel_queue_03' with pid 180
+2022-06-15 03:13:24,968 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:25,969 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:25,969 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:25,970 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:25,971 INFO spawned: 'laravel_schedule_00' with pid 181
+2022-06-15 03:13:25,971 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:26,106 INFO spawned: 'laravel_queue_01' with pid 182
+2022-06-15 03:13:26,118 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:26,156 INFO spawned: 'laravel_queue_00' with pid 183
+2022-06-15 03:13:26,157 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:27,152 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:27,153 INFO spawned: 'laravel_queue_02' with pid 184
+2022-06-15 03:13:27,153 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:27,153 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:27,306 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:27,307 INFO spawned: 'laravel_queue_03' with pid 185
+2022-06-15 03:13:27,308 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:27,354 INFO spawned: 'laravel_schedule_00' with pid 186
+2022-06-15 03:13:27,355 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:28,342 INFO spawned: 'laravel_queue_01' with pid 187
+2022-06-15 03:13:28,343 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:28,343 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:28,343 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:28,456 INFO spawned: 'laravel_queue_00' with pid 188
+2022-06-15 03:13:28,456 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:28,456 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:28,532 INFO spawned: 'laravel_queue_02' with pid 189
+2022-06-15 03:13:28,532 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:29,510 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:29,510 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:29,511 INFO spawned: 'laravel_queue_03' with pid 190
+2022-06-15 03:13:29,511 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:29,618 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:29,936 INFO spawned: 'laravel_schedule_00' with pid 191
+2022-06-15 03:13:29,937 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:30,382 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:30,383 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:30,386 INFO spawned: 'laravel_queue_00' with pid 192
+2022-06-15 03:13:30,388 INFO spawned: 'laravel_queue_01' with pid 193
+2022-06-15 03:13:30,389 INFO spawned: 'laravel_queue_02' with pid 194
+2022-06-15 03:13:31,391 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:31,391 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:31,391 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:31,391 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:31,391 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:33,027 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:33,073 INFO spawned: 'laravel_queue_00' with pid 195
+2022-06-15 03:13:33,073 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:33,113 INFO spawned: 'laravel_schedule_00' with pid 196
+2022-06-15 03:13:33,113 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:33,129 INFO spawned: 'laravel_queue_03' with pid 197
+2022-06-15 03:13:33,130 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:34,132 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:34,133 INFO spawned: 'laravel_queue_01' with pid 198
+2022-06-15 03:13:34,133 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:34,133 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:34,133 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:34,265 INFO spawned: 'laravel_queue_02' with pid 199
+2022-06-15 03:13:34,294 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:34,353 INFO spawned: 'laravel_queue_00' with pid 200
+2022-06-15 03:13:34,353 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:35,312 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:35,312 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:35,313 INFO spawned: 'laravel_schedule_00' with pid 201
+2022-06-15 03:13:35,313 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:35,489 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:35,490 INFO spawned: 'laravel_queue_03' with pid 202
+2022-06-15 03:13:35,491 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:35,537 INFO spawned: 'laravel_queue_01' with pid 203
+2022-06-15 03:13:35,538 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:36,540 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:36,541 INFO spawned: 'laravel_queue_02' with pid 204
+2022-06-15 03:13:36,541 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:36,541 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:36,541 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:36,742 INFO spawned: 'laravel_queue_00' with pid 205
+2022-06-15 03:13:36,742 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:36,746 INFO spawned: 'laravel_schedule_00' with pid 206
+2022-06-15 03:13:37,748 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:37,748 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:37,748 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:37,748 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:13:37,748 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:13:37,836 INFO spawned: 'laravel_queue_01' with pid 207
+2022-06-15 03:13:37,838 INFO spawned: 'laravel_queue_03' with pid 208
+2022-06-15 03:13:38,124 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:13:38,180 INFO spawned: 'laravel_queue_02' with pid 209
+2022-06-15 03:13:38,180 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:13:39,182 INFO spawned: 'laravel_queue_00' with pid 210
+2022-06-15 03:13:39,183 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:39,183 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:39,183 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:13:39,183 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:13:39,285 INFO spawned: 'laravel_schedule_00' with pid 211
+2022-06-15 03:13:39,285 WARN received SIGQUIT indicating exit request
+2022-06-15 03:13:39,294 INFO waiting for laravel_queue_00, laravel_queue_01, laravel_queue_02, laravel_queue_03, laravel_schedule_00 to die
+2022-06-15 03:13:39,294 INFO exited: laravel_queue_00 (exit status 1; not expected)
+2022-06-15 03:13:39,294 INFO stopped: laravel_schedule_00 (terminated by SIGTERM)
+2022-06-15 03:13:39,309 INFO stopped: laravel_queue_02 (terminated by SIGTERM)
+2022-06-15 03:13:39,311 INFO stopped: laravel_queue_01 (terminated by SIGTERM)
+2022-06-15 03:13:39,312 INFO stopped: laravel_queue_03 (terminated by SIGTERM)
+2022-06-15 03:14:53,143 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-06-15 03:14:53,146 INFO supervisord started with pid 1
+2022-06-15 03:14:54,149 INFO spawned: 'laravel_queue_00' with pid 7
+2022-06-15 03:14:54,150 INFO spawned: 'laravel_queue_01' with pid 8
+2022-06-15 03:14:54,152 INFO spawned: 'laravel_queue_02' with pid 9
+2022-06-15 03:14:54,153 INFO spawned: 'laravel_queue_03' with pid 10
+2022-06-15 03:14:54,156 INFO spawned: 'laravel_schedule_00' with pid 11
+2022-06-15 03:14:55,157 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:14:55,157 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:14:55,158 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:14:55,158 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:14:55,158 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:14:55,774 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:14:55,793 INFO spawned: 'laravel_queue_03' with pid 12
+2022-06-15 03:14:55,793 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:14:56,345 INFO spawned: 'laravel_queue_00' with pid 13
+2022-06-15 03:14:56,345 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:14:56,373 INFO spawned: 'laravel_queue_02' with pid 14
+2022-06-15 03:14:56,374 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:14:57,314 INFO spawned: 'laravel_queue_01' with pid 15
+2022-06-15 03:14:57,314 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:14:57,314 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:14:57,909 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:14:57,909 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:14:57,911 INFO spawned: 'laravel_schedule_00' with pid 16
+2022-06-15 03:14:57,911 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:14:57,958 INFO spawned: 'laravel_queue_03' with pid 17
+2022-06-15 03:14:57,958 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:14:58,905 INFO spawned: 'laravel_queue_00' with pid 18
+2022-06-15 03:14:58,905 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:14:58,905 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:14:59,427 INFO spawned: 'laravel_queue_02' with pid 19
+2022-06-15 03:14:59,427 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:14:59,427 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:14:59,427 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:14:59,485 INFO spawned: 'laravel_queue_01' with pid 20
+2022-06-15 03:14:59,485 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:00,487 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:00,487 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:00,487 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:00,488 INFO spawned: 'laravel_schedule_00' with pid 21
+2022-06-15 03:15:00,489 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:00,519 INFO spawned: 'laravel_queue_03' with pid 22
+2022-06-15 03:15:00,900 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:01,140 INFO spawned: 'laravel_queue_00' with pid 23
+2022-06-15 03:15:01,140 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:15:02,039 INFO spawned: 'laravel_queue_02' with pid 24
+2022-06-15 03:15:02,040 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:02,040 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:02,040 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:02,054 INFO spawned: 'laravel_queue_01' with pid 25
+2022-06-15 03:15:02,055 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:02,663 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:02,665 INFO spawned: 'laravel_schedule_00' with pid 26
+2022-06-15 03:15:02,665 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:03,610 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:03,611 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:03,612 INFO spawned: 'laravel_queue_03' with pid 27
+2022-06-15 03:15:03,612 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:03,694 INFO spawned: 'laravel_queue_00' with pid 28
+2022-06-15 03:15:03,694 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:03,694 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:04,388 INFO spawned: 'laravel_queue_01' with pid 29
+2022-06-15 03:15:04,388 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:15:05,211 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:05,212 INFO spawned: 'laravel_queue_02' with pid 30
+2022-06-15 03:15:05,213 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:05,213 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:05,330 INFO spawned: 'laravel_schedule_00' with pid 31
+2022-06-15 03:15:05,331 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:06,064 INFO spawned: 'laravel_queue_00' with pid 32
+2022-06-15 03:15:06,064 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:06,065 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:06,899 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:06,901 INFO spawned: 'laravel_queue_03' with pid 33
+2022-06-15 03:15:06,901 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:06,901 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:06,999 INFO spawned: 'laravel_queue_01' with pid 34
+2022-06-15 03:15:06,999 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:07,620 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:07,621 INFO spawned: 'laravel_schedule_00' with pid 35
+2022-06-15 03:15:07,622 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:15:08,566 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:08,568 INFO spawned: 'laravel_queue_02' with pid 36
+2022-06-15 03:15:08,568 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:08,568 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:08,765 INFO spawned: 'laravel_queue_00' with pid 37
+2022-06-15 03:15:08,765 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:08,765 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:09,300 INFO spawned: 'laravel_queue_03' with pid 38
+2022-06-15 03:15:09,300 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:10,121 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:10,123 INFO spawned: 'laravel_queue_01' with pid 39
+2022-06-15 03:15:10,123 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:10,123 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:10,414 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:10,416 INFO spawned: 'laravel_schedule_00' with pid 40
+2022-06-15 03:15:10,416 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:15:10,896 INFO spawned: 'laravel_queue_02' with pid 41
+2022-06-15 03:15:10,897 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:11,774 INFO spawned: 'laravel_queue_00' with pid 42
+2022-06-15 03:15:11,775 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:11,775 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:11,775 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:12,078 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:12,079 INFO spawned: 'laravel_queue_03' with pid 43
+2022-06-15 03:15:12,080 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:12,544 INFO spawned: 'laravel_queue_01' with pid 44
+2022-06-15 03:15:12,545 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:13,404 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:13,405 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:13,406 INFO spawned: 'laravel_schedule_00' with pid 45
+2022-06-15 03:15:13,406 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:15:13,868 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:13,869 INFO spawned: 'laravel_queue_02' with pid 46
+2022-06-15 03:15:13,869 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:14,184 INFO spawned: 'laravel_queue_00' with pid 47
+2022-06-15 03:15:14,185 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:14,995 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:14,996 INFO spawned: 'laravel_queue_03' with pid 48
+2022-06-15 03:15:14,996 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:14,997 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:15,665 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:15,666 INFO spawned: 'laravel_queue_01' with pid 49
+2022-06-15 03:15:15,666 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:16,043 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:16,044 INFO spawned: 'laravel_schedule_00' with pid 50
+2022-06-15 03:15:16,044 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:15:16,476 INFO spawned: 'laravel_queue_02' with pid 51
+2022-06-15 03:15:16,477 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:17,128 INFO spawned: 'laravel_queue_00' with pid 52
+2022-06-15 03:15:17,129 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:17,129 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:17,129 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:17,523 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:17,524 INFO spawned: 'laravel_queue_03' with pid 53
+2022-06-15 03:15:17,524 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:17,880 INFO spawned: 'laravel_queue_01' with pid 54
+2022-06-15 03:15:17,880 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:18,473 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:18,474 INFO spawned: 'laravel_schedule_00' with pid 55
+2022-06-15 03:15:18,474 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:15:18,833 INFO spawned: 'laravel_queue_02' with pid 56
+2022-06-15 03:15:18,833 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:18,833 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:19,187 INFO spawned: 'laravel_queue_00' with pid 57
+2022-06-15 03:15:19,187 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:19,187 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:19,817 INFO spawned: 'laravel_queue_03' with pid 58
+2022-06-15 03:15:19,817 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:19,817 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:20,162 INFO spawned: 'laravel_queue_01' with pid 59
+2022-06-15 03:15:20,163 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:20,163 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:20,510 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:20,511 INFO spawned: 'laravel_schedule_00' with pid 60
+2022-06-15 03:15:20,511 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:15:21,110 INFO spawned: 'laravel_queue_02' with pid 61
+2022-06-15 03:15:21,110 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:21,110 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:21,471 INFO spawned: 'laravel_queue_00' with pid 62
+2022-06-15 03:15:21,471 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:21,471 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:21,864 INFO spawned: 'laravel_queue_03' with pid 63
+2022-06-15 03:15:21,864 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:21,864 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:22,492 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:22,494 INFO spawned: 'laravel_queue_01' with pid 64
+2022-06-15 03:15:22,494 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:22,494 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:22,853 INFO spawned: 'laravel_schedule_00' with pid 65
+2022-06-15 03:15:22,854 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:15:23,231 INFO spawned: 'laravel_queue_02' with pid 66
+2022-06-15 03:15:23,231 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:23,232 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:23,819 INFO spawned: 'laravel_queue_00' with pid 67
+2022-06-15 03:15:23,819 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:23,820 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:24,200 INFO spawned: 'laravel_queue_03' with pid 68
+2022-06-15 03:15:24,201 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:24,201 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:24,570 INFO spawned: 'laravel_queue_01' with pid 69
+2022-06-15 03:15:24,570 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:24,571 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:25,191 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:25,192 INFO spawned: 'laravel_schedule_00' with pid 70
+2022-06-15 03:15:25,192 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:15:25,520 INFO spawned: 'laravel_queue_02' with pid 71
+2022-06-15 03:15:25,521 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:25,521 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:25,869 INFO spawned: 'laravel_queue_00' with pid 72
+2022-06-15 03:15:25,869 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:25,869 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:26,454 INFO spawned: 'laravel_queue_03' with pid 73
+2022-06-15 03:15:26,454 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:26,454 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:26,767 INFO spawned: 'laravel_queue_01' with pid 74
+2022-06-15 03:15:26,768 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:26,768 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:15:27,121 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:27,122 INFO spawned: 'laravel_schedule_00' with pid 75
+2022-06-15 03:15:27,122 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:15:27,755 INFO spawned: 'laravel_queue_02' with pid 76
+2022-06-15 03:15:27,755 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:27,756 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:15:28,083 INFO spawned: 'laravel_queue_00' with pid 77
+2022-06-15 03:15:28,083 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:28,083 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:15:28,416 INFO spawned: 'laravel_queue_03' with pid 78
+2022-06-15 03:15:28,417 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:28,417 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:15:28,419 INFO spawned: 'laravel_queue_01' with pid 79
+2022-06-15 03:15:28,426 INFO exited: laravel_queue_00 (exit status 1; not expected)
+2022-06-15 03:15:28,529 INFO exited: laravel_queue_02 (exit status 1; not expected)
+2022-06-15 03:15:28,597 INFO exited: laravel_queue_03 (exit status 1; not expected)
+2022-06-15 03:15:28,598 INFO exited: laravel_schedule_00 (terminated by SIGSEGV (core dumped); not expected)
+2022-06-15 03:15:28,598 INFO exited: laravel_queue_01 (exit status 1; not expected)
+2022-06-15 03:15:29,599 INFO spawned: 'laravel_queue_00' with pid 80
+2022-06-15 03:15:29,601 INFO spawned: 'laravel_queue_01' with pid 81
+2022-06-15 03:15:29,602 INFO spawned: 'laravel_queue_02' with pid 82
+2022-06-15 03:15:29,603 INFO spawned: 'laravel_queue_03' with pid 83
+2022-06-15 03:15:29,605 INFO spawned: 'laravel_schedule_00' with pid 84
+2022-06-15 03:15:29,721 INFO exited: laravel_queue_00 (exit status 1; not expected)
+2022-06-15 03:15:29,731 INFO exited: laravel_queue_03 (exit status 1; not expected)
+2022-06-15 03:15:29,753 INFO exited: laravel_queue_01 (exit status 1; not expected)
+2022-06-15 03:15:29,778 INFO exited: laravel_queue_02 (exit status 1; not expected)
+2022-06-15 03:15:30,806 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:30,806 INFO exited: laravel_schedule_00 (exit status 1; not expected)
+2022-06-15 03:15:31,809 INFO spawned: 'laravel_queue_00' with pid 85
+2022-06-15 03:15:31,810 INFO spawned: 'laravel_queue_01' with pid 86
+2022-06-15 03:15:31,812 INFO spawned: 'laravel_queue_02' with pid 87
+2022-06-15 03:15:31,813 INFO spawned: 'laravel_queue_03' with pid 88
+2022-06-15 03:15:31,815 INFO spawned: 'laravel_schedule_00' with pid 89
+2022-06-15 03:15:31,950 INFO exited: laravel_queue_00 (exit status 1; not expected)
+2022-06-15 03:15:31,950 INFO exited: laravel_queue_02 (exit status 1; not expected)
+2022-06-15 03:15:31,950 INFO exited: laravel_queue_03 (exit status 1; not expected)
+2022-06-15 03:15:31,961 INFO exited: laravel_queue_01 (exit status 1; not expected)
+2022-06-15 03:15:32,980 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:32,981 INFO exited: laravel_schedule_00 (exit status 1; not expected)
+2022-06-15 03:15:33,982 INFO spawned: 'laravel_schedule_00' with pid 90
+2022-06-15 03:15:35,103 INFO spawned: 'laravel_queue_00' with pid 91
+2022-06-15 03:15:35,105 INFO spawned: 'laravel_queue_01' with pid 92
+2022-06-15 03:15:35,106 INFO spawned: 'laravel_queue_02' with pid 93
+2022-06-15 03:15:35,107 INFO spawned: 'laravel_queue_03' with pid 94
+2022-06-15 03:15:35,108 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:35,108 INFO exited: laravel_schedule_00 (exit status 1; not expected)
+2022-06-15 03:15:35,237 INFO spawned: 'laravel_schedule_00' with pid 95
+2022-06-15 03:15:35,251 INFO exited: laravel_queue_00 (exit status 1; not expected)
+2022-06-15 03:15:35,251 INFO exited: laravel_queue_02 (exit status 1; not expected)
+2022-06-15 03:15:35,252 INFO gave up: laravel_queue_00 entered FATAL state, too many start retries too quickly
+2022-06-15 03:15:35,252 INFO gave up: laravel_queue_02 entered FATAL state, too many start retries too quickly
+2022-06-15 03:15:35,379 INFO exited: laravel_queue_01 (exit status 1; not expected)
+2022-06-15 03:15:35,379 INFO exited: laravel_queue_03 (exit status 1; not expected)
+2022-06-15 03:15:35,380 INFO gave up: laravel_queue_01 entered FATAL state, too many start retries too quickly
+2022-06-15 03:15:35,380 INFO gave up: laravel_queue_03 entered FATAL state, too many start retries too quickly
+2022-06-15 03:15:36,404 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:36,404 INFO exited: laravel_schedule_00 (exit status 1; not expected)
+2022-06-15 03:15:37,406 INFO spawned: 'laravel_schedule_00' with pid 96
+2022-06-15 03:15:38,544 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:38,544 INFO exited: laravel_schedule_00 (exit status 1; not expected)
+2022-06-15 03:15:39,548 INFO spawned: 'laravel_schedule_00' with pid 97
+2022-06-15 03:15:40,667 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:40,667 INFO exited: laravel_schedule_00 (exit status 1; not expected)
+2022-06-15 03:15:41,671 INFO spawned: 'laravel_schedule_00' with pid 98
+2022-06-15 03:15:42,800 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:15:42,801 INFO exited: laravel_schedule_00 (exit status 1; not expected)
+2022-06-15 03:15:43,804 INFO spawned: 'laravel_schedule_00' with pid 99
+2022-06-15 03:15:44,941 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:20,353 WARN received SIGQUIT indicating exit request
+2022-06-15 03:28:22,470 INFO waiting for laravel_schedule_00 to die
+2022-06-15 03:28:22,478 INFO stopped: laravel_schedule_00 (terminated by SIGTERM)
+2022-06-15 03:28:48,556 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-06-15 03:28:48,558 INFO supervisord started with pid 1
+2022-06-15 03:28:49,563 INFO spawned: 'laravel_queue_00' with pid 7
+2022-06-15 03:28:49,567 INFO spawned: 'laravel_queue_01' with pid 8
+2022-06-15 03:28:49,571 INFO spawned: 'laravel_queue_02' with pid 9
+2022-06-15 03:28:49,573 INFO spawned: 'laravel_queue_03' with pid 10
+2022-06-15 03:28:49,576 INFO spawned: 'laravel_schedule_00' with pid 11
+2022-06-15 03:28:50,578 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:50,578 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:50,578 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:50,578 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:50,578 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:50,813 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:28:50,821 INFO spawned: 'laravel_queue_02' with pid 12
+2022-06-15 03:28:50,831 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:28:50,831 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:28:50,879 INFO spawned: 'laravel_queue_00' with pid 13
+2022-06-15 03:28:50,881 INFO spawned: 'laravel_queue_01' with pid 14
+2022-06-15 03:28:50,881 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:28:51,882 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:51,882 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:51,882 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:51,883 INFO spawned: 'laravel_queue_03' with pid 15
+2022-06-15 03:28:51,884 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:28:52,042 INFO spawned: 'laravel_schedule_00' with pid 16
+2022-06-15 03:28:52,108 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:28:52,113 INFO spawned: 'laravel_queue_02' with pid 17
+2022-06-15 03:28:53,115 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:53,115 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:53,115 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:53,115 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:28:53,115 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:28:53,186 INFO spawned: 'laravel_queue_00' with pid 18
+2022-06-15 03:28:53,188 INFO spawned: 'laravel_queue_01' with pid 19
+2022-06-15 03:28:53,343 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:28:53,401 INFO spawned: 'laravel_queue_03' with pid 20
+2022-06-15 03:28:53,401 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:28:54,402 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:54,402 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:54,402 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:54,403 INFO spawned: 'laravel_schedule_00' with pid 21
+2022-06-15 03:28:54,403 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:28:54,481 INFO spawned: 'laravel_queue_02' with pid 22
+2022-06-15 03:28:54,501 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:28:54,702 INFO spawned: 'laravel_queue_00' with pid 23
+2022-06-15 03:28:54,703 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:28:55,660 INFO spawned: 'laravel_queue_01' with pid 24
+2022-06-15 03:28:55,660 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:55,660 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:55,660 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:28:55,708 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:55,709 INFO spawned: 'laravel_queue_03' with pid 25
+2022-06-15 03:28:55,710 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:28:55,942 INFO spawned: 'laravel_schedule_00' with pid 26
+2022-06-15 03:28:55,942 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:28:56,885 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:56,886 INFO spawned: 'laravel_queue_02' with pid 27
+2022-06-15 03:28:56,886 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:56,886 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:28:57,003 INFO spawned: 'laravel_queue_00' with pid 28
+2022-06-15 03:28:57,004 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:57,004 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:28:57,199 INFO spawned: 'laravel_queue_01' with pid 29
+2022-06-15 03:28:57,200 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:28:58,139 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:58,139 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:58,141 INFO spawned: 'laravel_queue_03' with pid 30
+2022-06-15 03:28:58,141 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:28:58,230 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:58,231 INFO spawned: 'laravel_schedule_00' with pid 31
+2022-06-15 03:28:58,232 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:28:58,450 INFO spawned: 'laravel_queue_02' with pid 32
+2022-06-15 03:28:58,451 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:28:59,323 INFO spawned: 'laravel_queue_00' with pid 33
+2022-06-15 03:28:59,323 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:59,323 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:59,323 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:28:59,406 INFO spawned: 'laravel_queue_01' with pid 34
+2022-06-15 03:28:59,406 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:28:59,636 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:28:59,637 INFO spawned: 'laravel_queue_03' with pid 35
+2022-06-15 03:28:59,637 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:00,528 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:00,528 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:00,529 INFO spawned: 'laravel_schedule_00' with pid 36
+2022-06-15 03:29:00,530 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:00,590 INFO spawned: 'laravel_queue_02' with pid 37
+2022-06-15 03:29:00,590 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:00,821 INFO spawned: 'laravel_queue_00' with pid 38
+2022-06-15 03:29:00,821 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:00,821 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:01,700 INFO spawned: 'laravel_queue_01' with pid 39
+2022-06-15 03:29:01,700 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:01,700 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:01,701 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:01,762 INFO spawned: 'laravel_queue_03' with pid 40
+2022-06-15 03:29:01,763 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:01,976 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:01,978 INFO spawned: 'laravel_schedule_00' with pid 41
+2022-06-15 03:29:01,978 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:02,861 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:02,862 INFO spawned: 'laravel_queue_02' with pid 42
+2022-06-15 03:29:02,862 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:02,862 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:02,921 INFO spawned: 'laravel_queue_00' with pid 43
+2022-06-15 03:29:02,921 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:03,152 INFO spawned: 'laravel_queue_01' with pid 44
+2022-06-15 03:29:03,152 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:03,152 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:04,049 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:04,049 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:04,050 INFO spawned: 'laravel_queue_03' with pid 45
+2022-06-15 03:29:04,050 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:04,076 INFO spawned: 'laravel_schedule_00' with pid 46
+2022-06-15 03:29:04,076 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:04,312 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:04,313 INFO spawned: 'laravel_queue_02' with pid 47
+2022-06-15 03:29:04,313 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:05,224 INFO spawned: 'laravel_queue_00' with pid 48
+2022-06-15 03:29:05,224 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:05,224 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:05,224 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:05,236 INFO spawned: 'laravel_queue_01' with pid 49
+2022-06-15 03:29:05,236 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:05,471 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:05,472 INFO spawned: 'laravel_queue_03' with pid 50
+2022-06-15 03:29:05,473 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:06,401 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:06,401 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:06,402 INFO spawned: 'laravel_schedule_00' with pid 51
+2022-06-15 03:29:06,402 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:06,403 INFO spawned: 'laravel_queue_02' with pid 52
+2022-06-15 03:29:06,659 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:06,659 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:06,659 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:07,603 INFO spawned: 'laravel_queue_00' with pid 53
+2022-06-15 03:29:07,605 INFO spawned: 'laravel_queue_01' with pid 54
+2022-06-15 03:29:07,605 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:07,605 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:07,605 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:07,633 INFO spawned: 'laravel_queue_03' with pid 55
+2022-06-15 03:29:07,634 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:08,635 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:08,635 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:08,635 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:08,636 INFO spawned: 'laravel_schedule_00' with pid 56
+2022-06-15 03:29:08,637 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:08,898 INFO spawned: 'laravel_queue_02' with pid 57
+2022-06-15 03:29:08,914 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:08,955 INFO spawned: 'laravel_queue_01' with pid 58
+2022-06-15 03:29:08,956 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:09,958 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:09,958 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:09,959 INFO spawned: 'laravel_queue_03' with pid 59
+2022-06-15 03:29:09,959 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:09,959 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:09,971 INFO spawned: 'laravel_queue_00' with pid 60
+2022-06-15 03:29:10,128 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:10,184 INFO spawned: 'laravel_schedule_00' with pid 61
+2022-06-15 03:29:10,184 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:11,187 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:11,188 INFO spawned: 'laravel_queue_02' with pid 62
+2022-06-15 03:29:11,188 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:11,188 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:11,188 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:11,263 INFO spawned: 'laravel_queue_01' with pid 63
+2022-06-15 03:29:11,290 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:11,471 INFO spawned: 'laravel_queue_00' with pid 64
+2022-06-15 03:29:11,472 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:12,401 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:12,401 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:12,402 INFO spawned: 'laravel_queue_03' with pid 65
+2022-06-15 03:29:12,403 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:12,425 INFO spawned: 'laravel_schedule_00' with pid 66
+2022-06-15 03:29:12,425 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:12,649 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:12,650 INFO spawned: 'laravel_queue_02' with pid 67
+2022-06-15 03:29:12,650 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:13,569 INFO spawned: 'laravel_queue_01' with pid 68
+2022-06-15 03:29:13,569 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:13,569 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:13,569 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:13,626 INFO spawned: 'laravel_queue_00' with pid 69
+2022-06-15 03:29:13,626 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:13,827 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:13,828 INFO spawned: 'laravel_queue_03' with pid 70
+2022-06-15 03:29:13,829 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:14,758 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:14,758 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:14,759 INFO spawned: 'laravel_schedule_00' with pid 71
+2022-06-15 03:29:14,759 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:14,831 INFO spawned: 'laravel_queue_02' with pid 72
+2022-06-15 03:29:14,831 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:14,831 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:15,013 INFO spawned: 'laravel_queue_01' with pid 73
+2022-06-15 03:29:15,013 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:15,952 INFO spawned: 'laravel_queue_00' with pid 74
+2022-06-15 03:29:15,952 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:15,952 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:15,952 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:16,095 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:16,096 INFO spawned: 'laravel_queue_03' with pid 75
+2022-06-15 03:29:16,097 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:16,234 INFO spawned: 'laravel_schedule_00' with pid 76
+2022-06-15 03:29:16,234 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:17,144 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:17,146 INFO spawned: 'laravel_queue_02' with pid 77
+2022-06-15 03:29:17,146 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:17,146 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:17,292 INFO spawned: 'laravel_queue_01' with pid 78
+2022-06-15 03:29:17,292 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:17,293 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:17,430 INFO spawned: 'laravel_queue_00' with pid 79
+2022-06-15 03:29:17,430 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:18,358 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:18,358 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:18,360 INFO spawned: 'laravel_queue_03' with pid 80
+2022-06-15 03:29:18,360 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:18,515 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:18,516 INFO spawned: 'laravel_schedule_00' with pid 81
+2022-06-15 03:29:18,517 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:18,669 INFO spawned: 'laravel_queue_02' with pid 82
+2022-06-15 03:29:18,670 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:19,592 INFO spawned: 'laravel_queue_01' with pid 83
+2022-06-15 03:29:19,593 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:19,593 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:19,593 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:19,750 INFO spawned: 'laravel_queue_00' with pid 84
+2022-06-15 03:29:19,751 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:19,751 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:19,897 INFO spawned: 'laravel_queue_03' with pid 85
+2022-06-15 03:29:19,897 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:20,792 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:20,792 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:20,793 INFO spawned: 'laravel_schedule_00' with pid 86
+2022-06-15 03:29:20,794 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:20,968 INFO spawned: 'laravel_queue_02' with pid 87
+2022-06-15 03:29:20,969 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:20,969 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:21,097 INFO spawned: 'laravel_queue_01' with pid 88
+2022-06-15 03:29:21,098 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:22,002 INFO spawned: 'laravel_queue_00' with pid 89
+2022-06-15 03:29:22,003 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:22,003 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:22,003 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:22,178 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:22,179 INFO spawned: 'laravel_queue_03' with pid 90
+2022-06-15 03:29:22,180 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:22,327 INFO spawned: 'laravel_schedule_00' with pid 91
+2022-06-15 03:29:22,327 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:23,302 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:23,303 INFO spawned: 'laravel_queue_02' with pid 92
+2022-06-15 03:29:23,303 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:23,304 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:23,554 INFO spawned: 'laravel_queue_01' with pid 93
+2022-06-15 03:29:23,554 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:23,554 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:23,711 INFO spawned: 'laravel_queue_00' with pid 94
+2022-06-15 03:29:23,711 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:24,632 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:24,632 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:24,633 INFO spawned: 'laravel_queue_03' with pid 95
+2022-06-15 03:29:24,633 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:24,846 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:24,847 INFO spawned: 'laravel_schedule_00' with pid 96
+2022-06-15 03:29:24,848 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:25,016 INFO spawned: 'laravel_queue_02' with pid 97
+2022-06-15 03:29:25,016 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:25,897 INFO spawned: 'laravel_queue_01' with pid 98
+2022-06-15 03:29:25,898 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:25,898 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:25,898 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:26,136 INFO spawned: 'laravel_queue_00' with pid 99
+2022-06-15 03:29:26,136 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:26,136 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:26,311 INFO spawned: 'laravel_queue_03' with pid 100
+2022-06-15 03:29:26,311 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:27,243 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:27,243 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:27,244 INFO spawned: 'laravel_schedule_00' with pid 101
+2022-06-15 03:29:27,245 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:27,578 INFO spawned: 'laravel_queue_02' with pid 102
+2022-06-15 03:29:27,578 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:27,578 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:27,751 INFO spawned: 'laravel_queue_01' with pid 103
+2022-06-15 03:29:27,751 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:28,707 INFO spawned: 'laravel_queue_00' with pid 104
+2022-06-15 03:29:28,708 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:28,708 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:28,708 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:29,032 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:29,033 INFO spawned: 'laravel_queue_03' with pid 105
+2022-06-15 03:29:29,033 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:29,131 INFO spawned: 'laravel_schedule_00' with pid 106
+2022-06-15 03:29:29,132 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:30,033 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:30,034 INFO spawned: 'laravel_queue_02' with pid 107
+2022-06-15 03:29:30,034 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:30,035 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:30,372 INFO spawned: 'laravel_queue_01' with pid 108
+2022-06-15 03:29:30,372 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:30,372 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:30,456 INFO spawned: 'laravel_queue_00' with pid 109
+2022-06-15 03:29:30,456 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:31,458 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:31,458 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:31,458 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:31,459 INFO spawned: 'laravel_queue_03' with pid 110
+2022-06-15 03:29:31,459 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:31,468 INFO spawned: 'laravel_schedule_00' with pid 111
+2022-06-15 03:29:31,757 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:31,941 INFO spawned: 'laravel_queue_02' with pid 112
+2022-06-15 03:29:31,941 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:32,863 INFO spawned: 'laravel_queue_01' with pid 113
+2022-06-15 03:29:32,863 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:32,863 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:32,863 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:32,958 INFO spawned: 'laravel_queue_00' with pid 114
+2022-06-15 03:29:32,959 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:32,959 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:33,246 INFO spawned: 'laravel_schedule_00' with pid 115
+2022-06-15 03:29:33,247 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:34,219 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:34,219 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:34,220 INFO spawned: 'laravel_queue_03' with pid 116
+2022-06-15 03:29:34,221 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:34,318 INFO spawned: 'laravel_queue_02' with pid 117
+2022-06-15 03:29:34,318 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:34,318 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:34,615 INFO spawned: 'laravel_queue_01' with pid 118
+2022-06-15 03:29:34,615 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:35,519 INFO spawned: 'laravel_queue_00' with pid 119
+2022-06-15 03:29:35,519 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:35,519 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:35,519 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:35,586 INFO spawned: 'laravel_schedule_00' with pid 120
+2022-06-15 03:29:35,586 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:35,902 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:35,903 INFO spawned: 'laravel_queue_03' with pid 121
+2022-06-15 03:29:35,904 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:36,905 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:36,907 INFO spawned: 'laravel_queue_02' with pid 122
+2022-06-15 03:29:36,907 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:36,907 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:36,907 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:36,917 INFO spawned: 'laravel_queue_01' with pid 123
+2022-06-15 03:29:36,930 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:37,263 INFO spawned: 'laravel_queue_00' with pid 124
+2022-06-15 03:29:37,264 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:38,241 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:38,241 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:38,242 INFO spawned: 'laravel_schedule_00' with pid 125
+2022-06-15 03:29:38,243 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:38,383 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:38,385 INFO spawned: 'laravel_queue_03' with pid 126
+2022-06-15 03:29:38,385 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:38,604 INFO spawned: 'laravel_queue_02' with pid 127
+2022-06-15 03:29:38,604 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:39,607 INFO spawned: 'laravel_queue_01' with pid 128
+2022-06-15 03:29:39,607 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:39,607 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:39,607 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:39,607 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:39,661 INFO spawned: 'laravel_queue_00' with pid 129
+2022-06-15 03:29:39,898 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:40,010 INFO spawned: 'laravel_schedule_00' with pid 130
+2022-06-15 03:29:40,010 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:40,944 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:40,944 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:40,946 INFO spawned: 'laravel_queue_03' with pid 131
+2022-06-15 03:29:40,946 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:41,014 INFO spawned: 'laravel_queue_02' with pid 132
+2022-06-15 03:29:41,014 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:41,014 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:41,367 INFO spawned: 'laravel_queue_01' with pid 133
+2022-06-15 03:29:41,368 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:42,286 INFO spawned: 'laravel_queue_00' with pid 134
+2022-06-15 03:29:42,286 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:42,286 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:42,287 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:42,322 INFO spawned: 'laravel_schedule_00' with pid 135
+2022-06-15 03:29:42,323 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:42,655 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:42,657 INFO spawned: 'laravel_queue_03' with pid 136
+2022-06-15 03:29:42,657 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:43,581 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:43,582 INFO spawned: 'laravel_queue_02' with pid 137
+2022-06-15 03:29:43,582 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:43,582 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:43,638 INFO spawned: 'laravel_queue_01' with pid 138
+2022-06-15 03:29:43,638 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:43,978 INFO spawned: 'laravel_queue_00' with pid 139
+2022-06-15 03:29:43,979 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:43,979 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:44,906 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:44,906 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:44,907 INFO spawned: 'laravel_schedule_00' with pid 140
+2022-06-15 03:29:44,908 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:44,962 INFO spawned: 'laravel_queue_03' with pid 141
+2022-06-15 03:29:44,963 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:45,267 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:45,269 INFO spawned: 'laravel_queue_02' with pid 142
+2022-06-15 03:29:45,269 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:46,257 INFO spawned: 'laravel_queue_01' with pid 143
+2022-06-15 03:29:46,257 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:46,257 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:46,257 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:46,269 INFO spawned: 'laravel_queue_00' with pid 144
+2022-06-15 03:29:46,269 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:46,269 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:46,561 INFO spawned: 'laravel_schedule_00' with pid 145
+2022-06-15 03:29:46,561 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:47,444 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:47,445 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:47,446 INFO spawned: 'laravel_queue_03' with pid 146
+2022-06-15 03:29:47,446 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:47,448 INFO spawned: 'laravel_queue_02' with pid 147
+2022-06-15 03:29:47,726 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:47,726 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:47,727 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:48,608 INFO spawned: 'laravel_queue_00' with pid 148
+2022-06-15 03:29:48,609 INFO spawned: 'laravel_queue_01' with pid 149
+2022-06-15 03:29:48,610 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:48,610 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:48,610 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:48,622 INFO spawned: 'laravel_schedule_00' with pid 150
+2022-06-15 03:29:48,623 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:49,625 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:49,625 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:49,626 INFO spawned: 'laravel_queue_02' with pid 151
+2022-06-15 03:29:49,626 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:49,626 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:49,772 INFO spawned: 'laravel_queue_03' with pid 152
+2022-06-15 03:29:49,814 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:49,823 INFO spawned: 'laravel_schedule_00' with pid 153
+2022-06-15 03:29:50,825 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:50,825 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:50,825 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:50,825 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:50,825 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:50,899 INFO spawned: 'laravel_queue_00' with pid 154
+2022-06-15 03:29:50,900 INFO spawned: 'laravel_queue_01' with pid 155
+2022-06-15 03:29:50,962 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:51,023 INFO spawned: 'laravel_queue_02' with pid 156
+2022-06-15 03:29:51,023 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:52,025 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:52,025 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:52,025 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:52,026 INFO spawned: 'laravel_queue_03' with pid 157
+2022-06-15 03:29:52,026 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:52,065 INFO spawned: 'laravel_schedule_00' with pid 158
+2022-06-15 03:29:52,084 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:52,202 INFO spawned: 'laravel_queue_00' with pid 159
+2022-06-15 03:29:52,203 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:53,196 INFO spawned: 'laravel_queue_01' with pid 160
+2022-06-15 03:29:53,196 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:53,196 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:53,196 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:53,234 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:53,236 INFO spawned: 'laravel_queue_02' with pid 161
+2022-06-15 03:29:53,236 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:53,365 INFO spawned: 'laravel_queue_03' with pid 162
+2022-06-15 03:29:53,365 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:54,367 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:54,367 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:54,367 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:54,368 INFO spawned: 'laravel_schedule_00' with pid 163
+2022-06-15 03:29:54,369 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:54,380 INFO spawned: 'laravel_queue_00' with pid 164
+2022-06-15 03:29:54,392 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:54,527 INFO spawned: 'laravel_queue_01' with pid 165
+2022-06-15 03:29:54,527 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:55,529 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:55,529 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:55,530 INFO spawned: 'laravel_queue_02' with pid 166
+2022-06-15 03:29:55,530 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:55,531 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:55,576 INFO spawned: 'laravel_queue_03' with pid 167
+2022-06-15 03:29:55,599 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:55,762 INFO spawned: 'laravel_schedule_00' with pid 168
+2022-06-15 03:29:55,762 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:56,702 INFO spawned: 'laravel_queue_00' with pid 169
+2022-06-15 03:29:56,702 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:56,702 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:56,702 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:56,765 INFO spawned: 'laravel_queue_01' with pid 170
+2022-06-15 03:29:56,765 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:56,765 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:56,963 INFO spawned: 'laravel_queue_02' with pid 171
+2022-06-15 03:29:56,963 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:57,878 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:57,878 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:57,879 INFO spawned: 'laravel_queue_03' with pid 172
+2022-06-15 03:29:57,879 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:29:57,966 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:57,967 INFO spawned: 'laravel_schedule_00' with pid 173
+2022-06-15 03:29:57,967 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:29:58,120 INFO spawned: 'laravel_queue_00' with pid 174
+2022-06-15 03:29:58,121 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:29:59,058 INFO spawned: 'laravel_queue_01' with pid 175
+2022-06-15 03:29:59,058 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:59,058 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:59,058 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:29:59,152 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:29:59,153 INFO spawned: 'laravel_queue_02' with pid 176
+2022-06-15 03:29:59,153 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:29:59,300 INFO spawned: 'laravel_queue_03' with pid 177
+2022-06-15 03:29:59,300 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:00,302 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:00,302 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:00,302 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:00,303 INFO spawned: 'laravel_schedule_00' with pid 178
+2022-06-15 03:30:00,303 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:00,328 INFO spawned: 'laravel_queue_00' with pid 179
+2022-06-15 03:30:00,425 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:00,545 INFO spawned: 'laravel_queue_01' with pid 180
+2022-06-15 03:30:00,545 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:01,516 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:01,518 INFO spawned: 'laravel_queue_02' with pid 181
+2022-06-15 03:30:01,518 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:01,518 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:01,558 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:01,559 INFO spawned: 'laravel_queue_03' with pid 182
+2022-06-15 03:30:01,559 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:01,700 INFO spawned: 'laravel_schedule_00' with pid 183
+2022-06-15 03:30:01,700 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:02,703 INFO spawned: 'laravel_queue_00' with pid 184
+2022-06-15 03:30:02,703 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:02,703 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:02,703 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:02,703 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:02,733 INFO spawned: 'laravel_queue_01' with pid 185
+2022-06-15 03:30:02,758 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:02,933 INFO spawned: 'laravel_queue_02' with pid 186
+2022-06-15 03:30:02,934 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:03,936 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:03,936 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:03,936 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:03,937 INFO spawned: 'laravel_queue_03' with pid 187
+2022-06-15 03:30:03,937 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:03,953 INFO spawned: 'laravel_schedule_00' with pid 188
+2022-06-15 03:30:04,007 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:04,185 INFO spawned: 'laravel_queue_00' with pid 189
+2022-06-15 03:30:04,185 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:05,152 INFO spawned: 'laravel_queue_01' with pid 190
+2022-06-15 03:30:05,152 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:05,152 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:05,152 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:05,177 INFO spawned: 'laravel_queue_02' with pid 191
+2022-06-15 03:30:05,177 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:05,397 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:05,398 INFO spawned: 'laravel_queue_03' with pid 192
+2022-06-15 03:30:05,399 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:06,366 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:06,366 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:06,367 INFO spawned: 'laravel_schedule_00' with pid 193
+2022-06-15 03:30:06,368 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:06,391 INFO spawned: 'laravel_queue_00' with pid 194
+2022-06-15 03:30:06,391 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:06,626 INFO spawned: 'laravel_queue_01' with pid 195
+2022-06-15 03:30:06,626 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:06,626 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:07,589 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:07,590 INFO spawned: 'laravel_queue_02' with pid 196
+2022-06-15 03:30:07,590 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:07,590 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:07,599 INFO spawned: 'laravel_queue_03' with pid 197
+2022-06-15 03:30:07,600 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:07,832 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:07,833 INFO spawned: 'laravel_schedule_00' with pid 198
+2022-06-15 03:30:07,834 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:08,822 INFO spawned: 'laravel_queue_00' with pid 199
+2022-06-15 03:30:08,823 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:08,823 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:08,823 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:08,833 INFO spawned: 'laravel_queue_01' with pid 200
+2022-06-15 03:30:08,833 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:08,833 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:09,047 INFO spawned: 'laravel_queue_03' with pid 201
+2022-06-15 03:30:09,047 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:10,025 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:10,025 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:10,027 INFO spawned: 'laravel_queue_02' with pid 202
+2022-06-15 03:30:10,027 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:10,038 INFO spawned: 'laravel_schedule_00' with pid 203
+2022-06-15 03:30:10,038 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:10,233 INFO spawned: 'laravel_queue_00' with pid 204
+2022-06-15 03:30:10,233 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:10,233 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:11,231 INFO spawned: 'laravel_queue_01' with pid 205
+2022-06-15 03:30:11,232 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:11,232 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:11,232 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:11,244 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:11,245 INFO spawned: 'laravel_queue_03' with pid 206
+2022-06-15 03:30:11,245 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:11,477 INFO spawned: 'laravel_schedule_00' with pid 207
+2022-06-15 03:30:11,477 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:12,478 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:12,479 INFO spawned: 'laravel_queue_02' with pid 208
+2022-06-15 03:30:12,480 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:12,480 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:12,480 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:12,575 INFO spawned: 'laravel_queue_00' with pid 209
+2022-06-15 03:30:12,591 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:12,845 INFO spawned: 'laravel_queue_01' with pid 210
+2022-06-15 03:30:12,845 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:13,847 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:13,847 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:13,847 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:13,848 INFO spawned: 'laravel_queue_03' with pid 211
+2022-06-15 03:30:13,848 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:13,872 INFO spawned: 'laravel_schedule_00' with pid 212
+2022-06-15 03:30:13,950 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:14,226 INFO spawned: 'laravel_queue_02' with pid 213
+2022-06-15 03:30:14,226 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:15,070 INFO spawned: 'laravel_queue_00' with pid 214
+2022-06-15 03:30:15,070 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:15,070 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:15,070 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:15,085 INFO spawned: 'laravel_queue_01' with pid 215
+2022-06-15 03:30:15,086 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:15,439 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:15,440 INFO spawned: 'laravel_queue_03' with pid 216
+2022-06-15 03:30:15,441 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:16,322 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:16,322 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:16,323 INFO spawned: 'laravel_schedule_00' with pid 217
+2022-06-15 03:30:16,324 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:16,331 INFO spawned: 'laravel_queue_02' with pid 218
+2022-06-15 03:30:16,675 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:16,675 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:16,676 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:17,616 INFO spawned: 'laravel_queue_00' with pid 219
+2022-06-15 03:30:17,617 INFO spawned: 'laravel_queue_01' with pid 220
+2022-06-15 03:30:17,617 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:17,618 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:17,618 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:17,619 INFO spawned: 'laravel_queue_03' with pid 221
+2022-06-15 03:30:18,621 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:18,621 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:18,621 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:18,621 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:18,621 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:18,795 INFO spawned: 'laravel_queue_02' with pid 222
+2022-06-15 03:30:18,796 INFO spawned: 'laravel_schedule_00' with pid 223
+2022-06-15 03:30:18,835 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:18,841 INFO spawned: 'laravel_queue_01' with pid 224
+2022-06-15 03:30:19,842 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:19,842 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:19,842 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:19,842 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:19,842 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:19,975 INFO spawned: 'laravel_queue_00' with pid 225
+2022-06-15 03:30:19,977 INFO spawned: 'laravel_queue_03' with pid 226
+2022-06-15 03:30:19,991 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:20,010 INFO spawned: 'laravel_queue_02' with pid 227
+2022-06-15 03:30:20,011 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:21,013 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:21,013 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:21,013 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:21,014 INFO spawned: 'laravel_schedule_00' with pid 228
+2022-06-15 03:30:21,014 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:21,271 INFO spawned: 'laravel_queue_01' with pid 229
+2022-06-15 03:30:21,272 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:21,310 INFO spawned: 'laravel_queue_00' with pid 230
+2022-06-15 03:30:21,397 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:22,399 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:22,399 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:22,400 INFO spawned: 'laravel_queue_03' with pid 231
+2022-06-15 03:30:22,400 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:22,401 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:22,544 INFO spawned: 'laravel_queue_02' with pid 232
+2022-06-15 03:30:22,594 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:22,652 INFO spawned: 'laravel_schedule_00' with pid 233
+2022-06-15 03:30:22,653 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:23,555 INFO spawned: 'laravel_queue_01' with pid 234
+2022-06-15 03:30:23,555 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:23,555 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:23,555 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:23,749 INFO spawned: 'laravel_queue_00' with pid 235
+2022-06-15 03:30:23,749 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:23,749 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:23,858 INFO spawned: 'laravel_queue_03' with pid 236
+2022-06-15 03:30:23,858 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:24,860 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:24,860 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:24,861 INFO spawned: 'laravel_queue_02' with pid 237
+2022-06-15 03:30:24,861 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:24,861 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:24,866 INFO spawned: 'laravel_schedule_00' with pid 238
+2022-06-15 03:30:25,201 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:25,295 INFO spawned: 'laravel_queue_01' with pid 239
+2022-06-15 03:30:25,296 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:26,137 INFO spawned: 'laravel_queue_00' with pid 240
+2022-06-15 03:30:26,138 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:26,138 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:26,138 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:26,186 INFO spawned: 'laravel_queue_03' with pid 241
+2022-06-15 03:30:26,187 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:26,469 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:26,470 INFO spawned: 'laravel_queue_02' with pid 242
+2022-06-15 03:30:26,470 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:27,438 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:27,438 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:27,439 INFO spawned: 'laravel_schedule_00' with pid 243
+2022-06-15 03:30:27,440 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:27,544 INFO spawned: 'laravel_queue_01' with pid 244
+2022-06-15 03:30:27,544 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:27,544 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:27,788 INFO spawned: 'laravel_queue_00' with pid 245
+2022-06-15 03:30:27,789 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:28,652 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:28,653 INFO spawned: 'laravel_queue_03' with pid 246
+2022-06-15 03:30:28,653 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:28,653 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:28,767 INFO spawned: 'laravel_queue_02' with pid 247
+2022-06-15 03:30:28,767 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:28,997 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:28,998 INFO spawned: 'laravel_schedule_00' with pid 248
+2022-06-15 03:30:28,998 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:29,838 INFO spawned: 'laravel_queue_01' with pid 249
+2022-06-15 03:30:29,838 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:29,838 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:29,838 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:29,951 INFO spawned: 'laravel_queue_00' with pid 250
+2022-06-15 03:30:29,951 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:30,175 INFO spawned: 'laravel_queue_03' with pid 251
+2022-06-15 03:30:30,175 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:30,175 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:31,022 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:31,022 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:31,023 INFO spawned: 'laravel_queue_02' with pid 252
+2022-06-15 03:30:31,024 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:31,115 INFO spawned: 'laravel_schedule_00' with pid 253
+2022-06-15 03:30:31,116 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:31,324 INFO spawned: 'laravel_queue_01' with pid 254
+2022-06-15 03:30:31,324 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:31,325 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:32,197 INFO spawned: 'laravel_queue_00' with pid 255
+2022-06-15 03:30:32,197 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:32,197 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:32,198 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:32,324 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:32,325 INFO spawned: 'laravel_queue_03' with pid 256
+2022-06-15 03:30:32,325 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:32,524 INFO spawned: 'laravel_queue_02' with pid 257
+2022-06-15 03:30:32,524 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:33,386 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:33,386 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:33,387 INFO spawned: 'laravel_schedule_00' with pid 258
+2022-06-15 03:30:33,388 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:33,529 INFO spawned: 'laravel_queue_01' with pid 259
+2022-06-15 03:30:33,530 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:33,530 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:33,734 INFO spawned: 'laravel_queue_00' with pid 260
+2022-06-15 03:30:33,734 INFO exited: laravel_queue_03 (exit status 255; not expected)
+2022-06-15 03:30:34,618 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:34,619 INFO spawned: 'laravel_queue_03' with pid 261
+2022-06-15 03:30:34,620 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:34,620 INFO exited: laravel_queue_02 (exit status 255; not expected)
+2022-06-15 03:30:34,731 INFO spawned: 'laravel_queue_02' with pid 262
+2022-06-15 03:30:34,732 INFO exited: laravel_schedule_00 (exit status 255; not expected)
+2022-06-15 03:30:34,963 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:34,964 INFO spawned: 'laravel_schedule_00' with pid 263
+2022-06-15 03:30:34,964 INFO exited: laravel_queue_01 (exit status 255; not expected)
+2022-06-15 03:30:35,279 INFO spawned: 'laravel_queue_01' with pid 270
+2022-06-15 03:30:35,280 INFO exited: laravel_queue_00 (exit status 255; not expected)
+2022-06-15 03:30:36,281 INFO spawned: 'laravel_queue_00' with pid 289
+2022-06-15 03:30:36,281 INFO success: laravel_queue_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:36,282 INFO success: laravel_queue_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:36,282 INFO success: laravel_queue_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:36,282 INFO success: laravel_schedule_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 03:30:37,283 INFO success: laravel_queue_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

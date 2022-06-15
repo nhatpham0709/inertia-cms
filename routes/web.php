@@ -4,6 +4,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Utils\UIUtils;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,8 +25,8 @@ Route::get('/', function () {
     ]);
 });
 
-Route::group(['prefix' => 'backend', 'as' => 'backend.', 'middleare' => ['auth', 'verified']], function () {
-    UIUtils::include_route_files(__DIR__ . '/backend/');
+Route::group(['middleare' => ['auth', 'verified']], function () {
+    UIUtils::includeRouteFiles(__DIR__ . '/backend');
 });
 
 require __DIR__ . '/auth.php';

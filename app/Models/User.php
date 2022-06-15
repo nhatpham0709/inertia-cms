@@ -79,5 +79,4 @@ class User extends Authenticatable
     {
         return $date->format('H:i:s d/m/Y');
     }
-
 }

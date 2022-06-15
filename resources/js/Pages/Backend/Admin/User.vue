@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     initListRoles() {
-      axios.post("/backend/admin/role/listing-all").then((response) => {
+      axios.post("/admin/role/listing-all").then((response) => {
         if (response.status == 200 && response.data && response.data.data) {
           this.roles = response.data.data;
         }
@@ -60,7 +60,7 @@ export default {
         order_by: this.order_by,
         order_type: this.order_type,
       };
-      axios.post("/backend/admin/user/listing", postData).then((response) => {
+      axios.post("/admin/user/listing", postData).then((response) => {
         if (response.status == 200 && response.data && response.data.data) {
           this.items = response.data.data;
           this.filtered = response.data.recordsFiltered;
@@ -96,7 +96,7 @@ export default {
     confirmDelete() {
       let vm = this;
       axios
-        .post("/backend/admin/user/" + vm.selectedUser.id + "/delete")
+        .post("/admin/user/" + vm.selectedUser.id + "/delete")
         .then((response) => {
           vm.submiting = false;
           if (
@@ -163,7 +163,7 @@ export default {
       vm.submiting = true;
       axios
         .post(
-          "/backend/admin/user/" + vm.modalTextConfirm.toLowerCase(),
+          "/admin/user/" + vm.modalTextConfirm.toLowerCase(),
           vm.selectedUser
         )
         .then((response) => {

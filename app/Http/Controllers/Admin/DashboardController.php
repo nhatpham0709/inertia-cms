@@ -8,7 +8,8 @@ use Inertia\Inertia;
 
 class DashboardController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return Inertia::render('Backend/Admin/Dashboard');
     }
 }

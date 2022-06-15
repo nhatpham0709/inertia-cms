@@ -7,17 +7,16 @@ use Illuminate\Http\Request;
 
 class PermissionServices
 {
-    private $permissionRepo;
+    private PermissionRepository $permissionRepo;
 
     public function __construct(PermissionRepository $permissionRepo)
     {
         $this->permissionRepo = $permissionRepo;
     }
 
-
     public function index()
     {
-        return view('backend.admin.permission.index');
+        return view('admin.permission.index');
     }
 
     public function listing($start, $length, $keyword, $orderBy, $orderType)

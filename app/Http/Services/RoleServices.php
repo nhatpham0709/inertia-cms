@@ -73,7 +73,6 @@ class RoleServices
 
     public function delete($id)
     {
-
         $role = Role::find($id);
         if (!$role || $role->name == 'admin') {
             return response()->json([
@@ -82,8 +81,9 @@ class RoleServices
             ], 400);
         }
         $role->permissions()->detach();
+
         return response()->json([
-            'code' => $role->delete() ? SUCCESS_CODE :  ERROR_CODE
+            'code' => $role->delete() ? SUCCESS_CODE : ERROR_CODE
         ]);
     }
 }

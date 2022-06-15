@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Auth;
 
 class UserRepository extends BaseRepository
 {
-
     /**
      * Specify Model class name.
      *
@@ -17,7 +16,6 @@ class UserRepository extends BaseRepository
      */
     public function model()
     {
-        // TODO: Implement model() method.
         return User::class;
     }
 
@@ -43,7 +41,7 @@ class UserRepository extends BaseRepository
                     ->orWhere('name', 'LIKE', "%$keyword%");
             });
         }
-        //        echo StringUtils::query_to_sql($query);
+        //        echo StringUtils::queryToSql($query);
         //        die();
         if ($orderBy) {
             $query->orderBy($orderBy, $orderType);
@@ -54,7 +52,7 @@ class UserRepository extends BaseRepository
         } else {
             $query->limit($length)->offset($start);
         }
-        //        echo StringUtils::query_to_sql($query);die();
+        //        echo StringUtils::queryToSql($query);die();
         return $query->get();
     }
 

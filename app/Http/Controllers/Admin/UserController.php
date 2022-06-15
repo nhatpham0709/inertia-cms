@@ -20,7 +20,7 @@ class UserController extends Controller
 
     public function index()
     {
-        return Inertia::render('Backend/Admin/User'); 
+        return Inertia::render('Backend/Admin/User');
     }
 
     public function add(CreateUserRequest $request)
@@ -69,5 +69,4 @@ class UserController extends Controller
 
         return $this->userServices->listing($role, $status, $keyword, $start, $length, $orderBy, $orderType);
     }
-
 }

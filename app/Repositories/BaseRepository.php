@@ -490,7 +490,6 @@ abstract class BaseRepository implements RepositoryContract
 
     public function listingSimple($relations = [], $keyword = "", $arrColumns = [], $start = 0, $length = 10, $orderBy = '', $orderType = 'asc', $countAll = true)
     {
-
         $query = $this->model;
         if (count($relations) > 0) {
             $query = $query->with($relations);
