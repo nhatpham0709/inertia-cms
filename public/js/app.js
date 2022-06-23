@@ -27815,34 +27815,39 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     deleteItem: function deleteItem(item) {
-      this.textDelete = 'Are you sure to delete permisison <span class="text-red-500 font-semibold">' + item.name + "</span> ?";
-      this.selectedPermission = item;
-      document.getElementById(this.modalDeleteId).showModal();
-    },
-    cancelDelete: function cancelDelete() {
-      document.getElementById(this.modalDeleteId).showModal();
-    },
-    confirmDelete: function confirmDelete() {
       var _this3 = this;
 
+      this.textDelete = 'Are you sure to delete permisison <span class="text-red-500 font-semibold">' + item.name + "</span> ?";
+      this.selectedPermission = item;
+      this.$nextTick(function () {
+        var modal = document.getElementById(_this3.modalDeleteId);
+
+        if (!modal.open) {
+          modal.showModal();
+        }
+      });
+    },
+    confirmDelete: function confirmDelete() {
+      var _this4 = this;
+
       this.$api["delete"](this.model, this.selectedPermission.id).then(function (response) {
-        _this3.submiting = false;
+        _this4.submiting = false;
 
         if (response.status == 200 && response.data && response.data.code == 0) {
-          document.getElementById(_this3.modalDeleteId).close();
+          document.getElementById(_this4.modalDeleteId).close();
 
-          _this3.$notify({
+          _this4.$notify({
             title: "Notify",
             text: "Success",
             type: "success"
           });
         } else {
           if (response.data && response.data.msg) {
-            _this3.errorMsg.name = err.data.msg;
+            _this4.errorMsg.name = err.data.msg;
           } else {
-            document.getElementById(_this3.modalDeleteId).close();
+            document.getElementById(_this4.modalDeleteId).close();
 
-            _this3.$notify({
+            _this4.$notify({
               title: "Notify",
               text: "Something went wrong, please try later.",
               type: "error"
@@ -27850,14 +27855,14 @@ __webpack_require__.r(__webpack_exports__);
           }
         }
       })["catch"](function (err) {
-        _this3.submiting = false;
+        _this4.submiting = false;
 
         if (err.response.status == 422 && err.response.data && err.response.data.message) {
-          _this3.errorMsg.name = err.response.data.message;
+          _this4.errorMsg.name = err.response.data.message;
         } else {
-          document.getElementById(_this3.modalId).close();
+          document.getElementById(_this4.modalId).close();
 
-          _this3.$notify({
+          _this4.$notify({
             title: "Notify",
             text: "Something went wrong, please try later.",
             type: "error"
@@ -27866,17 +27871,17 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     handleCloseModal: function handleCloseModal() {
-      var _this4 = this;
+      var _this5 = this;
 
       setTimeout(function () {
-        _this4.selectedPermission = {
+        _this5.selectedPermission = {
           name: "",
           description: ""
         };
       }, 500);
     },
     handleSubmitModal: function handleSubmitModal() {
-      var _this5 = this;
+      var _this6 = this;
 
       this.submiting = true;
 
@@ -27889,23 +27894,23 @@ __webpack_require__.r(__webpack_exports__);
       this.errorMsg.name = "";
       this.submiting = true;
       this.$api.store(this.model, this.selectedPermission).then(function (response) {
-        _this5.submiting = false;
+        _this6.submiting = false;
 
         if (response.status == 200 && response.data && response.data.code == 0) {
-          document.getElementById(_this5.modalId).close();
+          document.getElementById(_this6.modalId).close();
 
-          _this5.$notify({
+          _this6.$notify({
             title: "Notify",
             text: "Success",
             type: "success"
           });
         } else {
           if (response.data && response.data.msg) {
-            _this5.errorMsg.name = err.data.msg;
+            _this6.errorMsg.name = err.data.msg;
           } else {
-            document.getElementById(_this5.modalId).close();
+            document.getElementById(_this6.modalId).close();
 
-            _this5.$notify({
+            _this6.$notify({
               title: "Notify",
               text: "Something went wrong, please try later.",
               type: "error"
@@ -27913,14 +27918,14 @@ __webpack_require__.r(__webpack_exports__);
           }
         }
       })["catch"](function (err) {
-        _this5.submiting = false;
+        _this6.submiting = false;
 
         if (err.response.status == 422 && err.response.data && err.response.data.message) {
-          _this5.errorMsg.name = err.response.data.message;
+          _this6.errorMsg.name = err.response.data.message;
         } else {
-          document.getElementById(_this5.modalId).close();
+          document.getElementById(_this6.modalId).close();
 
-          _this5.$notify({
+          _this6.$notify({
             title: "Notify",
             text: "Something went wrong, please try later.",
             type: "error"

@@ -71,10 +71,12 @@ export default {
         item.name +
         "</span> ?";
       this.selectedPermission = item;
-      document.getElementById(this.modalDeleteId).showModal();
-    },
-    cancelDelete() {
-      document.getElementById(this.modalDeleteId).showModal();
+      this.$nextTick(() => {
+        let modal = document.getElementById(this.modalDeleteId);
+        if (!modal.open) {
+          modal.showModal();
+        }
+      })
     },
     confirmDelete() {
       this.$api
