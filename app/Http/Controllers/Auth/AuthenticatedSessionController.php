@@ -44,6 +44,7 @@ class AuthenticatedSessionController extends Controller
             $user->last_login = date('Y-m-d H:i:s');
             $user->save();
         }
+
         return redirect($user->roles()->first()->default_redirect);
     }
 
@@ -61,6 +62,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/login');
+        return redirect(RouteServiceProvider::LOGIN);
     }
 }

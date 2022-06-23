@@ -2,28 +2,36 @@
 
 namespace App\Http\Middleware;
 
+use App\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
-class RoleMiddleware
+class Role
 {
     /**
      * Handle an incoming request.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
+     * @param string $permission
+     *
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
     public function handle(Request $request, Closure $next, $roles)
     {
-        if (app('auth')->guest()) {
-            return redirect()->route('login');
+        /** @var \App\Models\User $user */
+        $user = Auth::user();
+
+        if (!$user) {
+            return redirect()->route(RouteServiceProvider::LOGIN);
         }
 
         $arrRoles = is_array($roles)
             ? $roles
             : explode('|', $roles);
-        if (auth()->user()->roles() && in_array(auth()->user()->roles()->first()->name, $arrRoles)) {
+
+        if ($user->roles() && in_array($user->roles()->first()->name, $arrRoles)) {
             return $next($request);
         }
 

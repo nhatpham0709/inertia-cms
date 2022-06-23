@@ -2,7 +2,7 @@
 import { onMounted, ref } from "vue";
 import BreezeAuthenticatedLayout from "@/Layouts/Authenticated.vue";
 import Modal from "@/Components/Modal.vue";
-import MessageBox from "@/Components/MessageBox.vue";
+import DeleteModal from "@/Components/DeleteModal.vue";
 import { Head } from "@inertiajs/inertia-vue3";
 import Input from "@/Components/Input.vue";
 import InputError from "@/Components/InputError.vue";
@@ -204,7 +204,7 @@ export default {
       <h2 class="font-semibold text-xl text-gray-800 leading-tight">Role</h2>
     </template>
 
-    <Message-box
+    <DeleteModal
       @confirm="confirmDelete"
       @close="handleCloseModal"
       :modal-id="modalDeleteId"
@@ -212,7 +212,7 @@ export default {
       :text-confirm="'Delete'"
       :textCancel="'Cancel'"
       :content="textDelete"
-    ></Message-box>
+    ></DeleteModal>
     <Modal
       @close="handleCloseModal"
       @submit="handleSubmitModal"
@@ -278,7 +278,6 @@ export default {
                     v-model="length"
                     @change="initTableRoles"
                     class="
-                      appearance-none
                       h-full
                       rounded-l
                       border

@@ -1,19 +1,17 @@
-<script setup>
-</script>
 <script>
 export default {
   props: {
     modalId: {
       type: String,
-      default: "custom-msg-box",
+      default: "delete-modal",
     },
     title: {
       type: String,
       default: "",
     },
-    content:{
-      type:String,
-      default: ""
+    content: {
+      type: String,
+      default: "",
     },
     textConfirm: {
       type: String,
@@ -39,14 +37,7 @@ export default {
 <template>
   <dialog :id="modalId" class="h-100 w-100 md:w-1/2 bg-white">
     <div
-      class="
-        flex flex-row
-        justify-between
-        p-6
-        bg-white
-        border-b border-gray-200
-        rounded-tl-lg rounded-tr-lg
-      "
+      class="flex flex-row justify-between p-6 bg-white border-b border-gray-200 rounded-tl-lg rounded-tr-lg"
     >
       <p class="font-semibold text-gray-800">{{ title }}</p>
       <svg
@@ -69,15 +60,7 @@ export default {
       <p v-html="content"></p>
     </div>
     <div
-      class="
-        flex flex-row
-        items-center
-        justify-between
-        p-5
-        bg-white
-        border-t border-gray-200
-        rounded-bl-lg rounded-br-lg
-      "
+      class="flex flex-row items-center justify-between p-5 bg-white border-t border-gray-200 rounded-bl-lg rounded-br-lg"
     >
       <p
         class="font-semibold text-gray-600 cursor-pointer"
@@ -86,16 +69,7 @@ export default {
         {{ textCancel }}
       </p>
       <button
-        class="
-          px-4
-          py-2
-          text-white
-          font-semibold
-          bg-blue-500
-          rounded
-          flex
-          disabled:opacity-70
-        "
+        class="px-4 py-2 text-white font-semibold bg-blue-500 rounded flex disabled:opacity-70"
         @click="handleConfirm"
       >
         {{ textConfirm }}
@@ -103,28 +77,3 @@ export default {
     </div>
   </dialog>
 </template>
-<style>
-dialog {
-  padding: 0;
-}
-dialog[open] {
-  animation: appear 0.15s cubic-bezier(0, 1.8, 1, 1.8);
-}
-
-dialog::backdrop {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(54, 54, 54, 0.5));
-  backdrop-filter: blur(3px);
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-    transform: translateX(-3rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-</style>

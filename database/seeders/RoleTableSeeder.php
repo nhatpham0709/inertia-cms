@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Permission;
 use App\Models\Role;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -18,7 +19,7 @@ class RoleTableSeeder extends Seeder
     {
         $role_admin_user = new Role();
         $role_admin_user->name = USER_ROLE_ADMIN;
-        $role_admin_user->default_redirect = '/admin/dashboard';
+        $role_admin_user->default_redirect = RouteServiceProvider::DASHBOARD;
         $role_admin_user->description = 'Administrator';
         $role_admin_user->save();
 

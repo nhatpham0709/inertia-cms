@@ -39,7 +39,7 @@ class PermissionController extends Controller
         return $this->permissionServices->listingAll($request);
     }
 
-    public function create(CreatePermissionRequest $request)
+    public function add(CreatePermissionRequest $request)
     {
         return $this->permissionServices->add(
             $request->input('name'),
