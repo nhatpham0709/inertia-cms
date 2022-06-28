@@ -2,14 +2,19 @@ export default {
   data() {
     return {
       items: [],
-      total: 0,
-      filtered: 0,
       search: "",
-      start: 0,
-      length: 10,
-      order: "",
-      order_by: "name",
-      order_type: "desc",
+      meta: {
+        total: 0,
+        filtered: 0,
+        start: 0,
+        totalPages: 1,
+        currentPage: 1,
+        length: 10,
+        order: "",
+        order_by: "name",
+        order_type: "desc",
+      },
+
       submiting: false,
       modalId: "",
       modalTitle: "",
@@ -28,21 +33,21 @@ export default {
     this.initTable();
   },
   methods: {
-    initTable() {
-      let meta = {
-        length: this.length,
-        start: this.start,
-        search: this.search,
-        order_by: this.order_by,
-        order_type: this.order_type,
-      };
-      this.$api.get(this.model, meta).then((response) => {
-        if (response.status == 200 && response.data && response.data.data) {
-          this.items = response.data.data;
-          this.filtered = response.data.recordsFiltered;
-          this.total = response.data.recordsTotal;
-        }
-      });
+    async initTable() {
+      try {
+        const res = await this.$api.get(this.model, this.meta);
+        this.items = res.data.data;
+        this.meta.filtered = 10;
+        this.meta.total = res.data.meta.pagination.total;
+        this.meta.totalPages = res.data.meta.pagination.total_pages;
+        this.meta.currentPage = res.data.meta.pagination.current_page;
+      } catch (e) {
+
+      }
+    },
+    changePage(page) {
+      this.meta.currentPage = page;
+      this.initTable();
     },
     editItem(item) {
       this.modalId = `${this.model}-edit-modal`;
@@ -81,12 +86,12 @@ export default {
     confirmDelete() {
       this.$api
         .delete(this.model, this.selectedPermission.id)
-        .then((response) => {
+        .then((res) => {
           this.submiting = false;
           if (
-            response.status == 200 &&
-            response.data &&
-            response.data.code == 0
+            res.status == 200 &&
+            res.data &&
+            res.data.code == 0
           ) {
             document.getElementById(this.modalDeleteId).close();
             this.$notify({
@@ -95,7 +100,7 @@ export default {
               type: "success",
             });
           } else {
-            if (response.data && response.data.msg) {
+            if (res.data && res.data.msg) {
               this.errorMsg.name = err.data.msg;
             } else {
               document.getElementById(this.modalDeleteId).close();
@@ -110,11 +115,11 @@ export default {
         .catch((err) => {
           this.submiting = false;
           if (
-            err.response.status == 422 &&
-            err.response.data &&
-            err.response.data.message
+            err.res.status == 422 &&
+            err.res.data &&
+            err.res.data.message
           ) {
-            this.errorMsg.name = err.response.data.message;
+            this.errorMsg.name = err.res.data.message;
           } else {
             document.getElementById(this.modalId).close();
             this.$notify({
@@ -144,12 +149,12 @@ export default {
       this.submiting = true;
       this.$api
         .store(this.model, this.selectedPermission)
-        .then((response) => {
+        .then((res) => {
           this.submiting = false;
           if (
-            response.status == 200 &&
-            response.data &&
-            response.data.code == 0
+            res.status == 200 &&
+            res.data &&
+            res.data.code == 0
           ) {
             document.getElementById(this.modalId).close();
             this.$notify({
@@ -158,7 +163,7 @@ export default {
               type: "success",
             });
           } else {
-            if (response.data && response.data.msg) {
+            if (res.data && res.data.msg) {
               this.errorMsg.name = err.data.msg;
             } else {
               document.getElementById(this.modalId).close();
@@ -173,11 +178,11 @@ export default {
         .catch((err) => {
           this.submiting = false;
           if (
-            err.response.status == 422 &&
-            err.response.data &&
-            err.response.data.message
+            err.res.status == 422 &&
+            err.res.data &&
+            err.res.data.message
           ) {
-            this.errorMsg.name = err.response.data.message;
+            this.errorMsg.name = err.res.data.message;
           } else {
             document.getElementById(this.modalId).close();
             this.$notify({

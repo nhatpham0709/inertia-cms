@@ -5,22 +5,22 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Permission\CreatePermissionRequest;
 use App\Http\Requests\Permission\UpdatePermissionRequest;
-use App\Http\Services\PermissionServices;
+use App\Http\Services\PermissionService;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 class PermissionController extends Controller
 {
-    private PermissionServices $permissionServices;
+    private PermissionService $permissionService;
 
-    public function __construct(PermissionServices $permissionServices)
+    public function __construct(PermissionService $permissionService)
     {
-        $this->permissionServices = $permissionServices;
+        $this->permissionService = $permissionService;
     }
 
     public function index()
     {
-        return Inertia::render('Backend/Admin/Permission');
+        return Inertia::render('Admin/Permission');
     }
 
     public function listing(Request $request)
@@ -31,17 +31,17 @@ class PermissionController extends Controller
         $orderBy = $request->input('order_by');
         $orderType = $request->input('order_type');
 
-        return $this->permissionServices->listing($start, $length, $keyword, $orderBy, $orderType);
+        return $this->permissionService->listing($start, $length, $keyword, $orderBy, $orderType);
     }
 
     public function listingAll(Request $request)
     {
-        return $this->permissionServices->listingAll($request);
+        return $this->permissionService->listingAll($request);
     }
 
     public function add(CreatePermissionRequest $request)
     {
-        return $this->permissionServices->add(
+        return $this->permissionService->add(
             $request->input('name'),
             $request->input('description')
         );
@@ -49,7 +49,7 @@ class PermissionController extends Controller
 
     public function update(UpdatePermissionRequest $request)
     {
-        return $this->permissionServices->update(
+        return $this->permissionService->update(
             $request->input('id'),
             $request->input('name'),
             $request->input('description')
@@ -58,6 +58,6 @@ class PermissionController extends Controller
 
     public function deteleById($id)
     {
-        return $this->permissionServices->delete($id);
+        return $this->permissionService->delete($id);
     }
 }

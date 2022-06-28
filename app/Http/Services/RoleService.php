@@ -3,10 +3,10 @@
 namespace App\Http\Services;
 
 use App\Models\Role;
-use App\Repositories\Backend\Admin\RoleRepository;
+use App\Repositories\Admin\RoleRepository;
 use Illuminate\Http\Request;
 
-class RoleServices
+class RoleService
 {
     private $roleRepo;
 

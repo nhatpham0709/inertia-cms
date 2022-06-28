@@ -2,12 +2,13 @@
 
 namespace App\Http\Services;
 
+use App\Exceptions\ApiException;
 use App\Models\Role;
 use App\Models\User;
-use App\Repositories\Backend\Admin\UserRepository;
-use Illuminate\Http\Request;
+use App\Repositories\Admin\UserRepository;
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
-class UserServices
+class UserService
 {
     private $userRepo;
 
@@ -20,12 +21,8 @@ class UserServices
     {
         $role = Role::find($roleId);
 
-        // validate for exist role
         if (!$role) {
-            return response()->json([
-                'code' => ERROR_CODE,
-                'msg' => 'Role not found'
-            ], 400);
+            throw ApiException::notFound('Role not found');
         }
 
         return response()->json([
@@ -81,32 +78,25 @@ class UserServices
     }
 
 
-    public function delete($id)
+    /**
+     *
+     * @param [type] $id
+     * @return boolean
+     */
+    public function delete($id): bool
     {
         $user = User::find($id);
-        // validate for exist user
+
         if (!$user) {
-            return response()->json([
-                'code' => ERROR_CODE,
-                'msg' => 'User not found'
-            ], 400);
+            throw ApiException::notFound('User not found');
         }
         $user->roles()->detach();
 
-        return response()->json([
-            'code' => $user->delete() ? SUCCESS_CODE : ERROR_CODE
-        ]);
+        return $this->userRepo->deleteById($user->id);
     }
 
-    public function listing($role, $status, $keyword, $start, $length, $orderBy, $orderType)
+    public function listing($role, $status, $keyword, $length, $orderBy, $orderType): ?LengthAwarePaginator
     {
-        $filteredRecords = $this->userRepo->listing($role, $status, $keyword, $start, $length, $orderBy, $orderType, true);
-        $totalRecords = $this->userRepo->listing($role, $status, $keyword, $start, $length, $orderBy, $orderType, true);
-
-        return response()->json([
-            'data' => $this->userRepo->listing($role, $status, $keyword, $start, $length, $orderBy, $orderType, false),
-            'recordsFiltered' => $filteredRecords ? $filteredRecords : 0,
-            'recordsTotal' => $totalRecords ? $totalRecords : 0,
-        ]);
+        return $this->userRepo->listing($role, $status, $keyword, $length, $orderBy, $orderType);
     }
 }

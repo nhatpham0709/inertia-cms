@@ -2,10 +2,9 @@
 
 namespace App\Http\Services;
 
-use App\Repositories\Backend\Admin\PermissionRepository;
-use Illuminate\Http\Request;
+use App\Repositories\Admin\PermissionRepository;
 
-class PermissionServices
+class PermissionService
 {
     private PermissionRepository $permissionRepo;
 
@@ -23,6 +22,7 @@ class PermissionServices
     {
         $filteredRecords = $this->permissionRepo->listingSimple([], $keyword, ['name', 'description'], $start, $length, $orderBy, $orderType, true);
         $totalRecords = $this->permissionRepo->listingSimple([], '', ['name', 'description'], $start, $length, $orderBy, $orderType, true);
+
         return response()->json([
             'data' => $this->permissionRepo->listingSimple([], $keyword, ['name', 'description'], $start, $length, $orderBy, $orderType, false),
             'recordsFiltered' => $filteredRecords ? $filteredRecords : 0,

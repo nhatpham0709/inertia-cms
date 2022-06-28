@@ -23,5 +23,7 @@ class UserTableSeeder extends Seeder
         $admin->password = bcrypt('12345678');
         $admin->save();
         $admin->roles()->attach(Role::where('name', USER_ROLE_ADMIN)->first());
+
+        User::factory(100)->create();
     }
 }

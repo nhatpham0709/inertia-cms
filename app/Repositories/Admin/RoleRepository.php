@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\Backend\Admin;
+namespace App\Repositories\Admin;
 
 use App\Models\Role;
 use App\Repositories\BaseRepository;

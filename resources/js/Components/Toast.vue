@@ -4,8 +4,8 @@ export default {
   name: "PopupNotification",
   data() {
     return {
-        type: '',
-        text: ''
+      type: '',
+      text: ''
     };
   },
   methods: {

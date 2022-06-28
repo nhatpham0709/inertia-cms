@@ -4,6 +4,8 @@ define('SUCCESS_CODE', 0);
 define('ERROR_CODE', 1);
 define('NOT_EXISTED_CODE', 2);
 
+define ('PER_PAGE', 10);
+
 define('USER_ROLE_ADMIN', 'admin');
 define('USER_ROLE_MANAGER', 'manager');
 define('USER_ROLE_MODERATOR', 'moderator');

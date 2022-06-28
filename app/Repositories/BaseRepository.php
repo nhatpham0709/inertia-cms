@@ -488,17 +488,13 @@ abstract class BaseRepository implements RepositoryContract
         return $this;
     }
 
-    public function listingSimple($relations = [], $keyword = "", $arrColumns = [], $start = 0, $length = 10, $orderBy = '', $orderType = 'asc', $countAll = true)
+    public function listingSimple($relations = [], $keyword = "", $arrColumns = [], $start = 0, $length = 10, $orderBy = '', $orderType = 'asc', $countAll = true, $perPage = 10)
     {
         $query = $this->model;
         if (count($relations) > 0) {
             $query = $query->with($relations);
         }
         if ($keyword && count($arrColumns) > 0) {
-//            $query = $query->where('username', 'LIKE', "%$keyword%")
-//                ->orWhere('email', 'LIKE', "%$keyword%")
-//                ->orWhere('fullname', 'LIKE', "%$keyword%")
-//                ->orWhere('client_id', 'LIKE', "%$keyword%");
             foreach ($arrColumns as $key => $column) {
                 if ($key == 0) {
                     $query = $query->where("$column", 'LIKE', "%$keyword%");
@@ -517,6 +513,6 @@ abstract class BaseRepository implements RepositoryContract
         } else {
             $query = $query->limit($length)->offset($start);
         }
-        return $query->get();
+        return $query->paginate($perPage);
     }
 }

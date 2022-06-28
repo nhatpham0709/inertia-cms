@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Repositories\Backend\Admin;
+namespace App\Repositories\Admin;
 
 use App\Models\Role;
 use App\Models\User;
 use App\Repositories\BaseRepository;
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Auth;
 
 class UserRepository extends BaseRepository
@@ -19,7 +20,7 @@ class UserRepository extends BaseRepository
         return User::class;
     }
 
-    public function listing($role, $status, $keyword, $start, $length, $orderBy, $orderType, $countAll = false)
+    public function listing($role, $status, $keyword, $length, $orderBy, $orderType): ?LengthAwarePaginator
     {
         $query = $this->model
             ->with(['roles', 'user' => function ($q) {
@@ -41,19 +42,12 @@ class UserRepository extends BaseRepository
                     ->orWhere('name', 'LIKE', "%$keyword%");
             });
         }
-        //        echo StringUtils::queryToSql($query);
-        //        die();
+
         if ($orderBy) {
             $query->orderBy($orderBy, $orderType);
         }
 
-        if ($countAll) {
-            return $query->count();
-        } else {
-            $query->limit($length)->offset($start);
-        }
-        //        echo StringUtils::queryToSql($query);die();
-        return $query->get();
+        return $query->paginate($length);
     }
 
 

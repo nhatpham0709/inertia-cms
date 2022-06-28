@@ -5,27 +5,29 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\User\CreateUserRequest;
 use App\Http\Requests\User\UpdateUserRequest;
-use App\Http\Services\UserServices;
+use App\Http\Services\UserService;
+use App\Transformers\Admin\UserPaginationResource;
+use App\Transformers\SuccessResource;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 class UserController extends Controller
 {
-    protected $userServices;
+    protected $userService;
 
-    public function __construct(UserServices $userServices)
+    public function __construct(UserService $userService)
     {
-        $this->userServices = $userServices;
+        $this->userService = $userService;
     }
 
     public function index()
     {
-        return Inertia::render('Backend/Admin/User');
+        return Inertia::render('Admin/User');
     }
 
     public function add(CreateUserRequest $request)
     {
-        return $this->userServices->add(
+        return $this->userService->add(
             $request->input('username'),
             $request->input('email'),
             $request->input('password'),
@@ -37,7 +39,7 @@ class UserController extends Controller
 
     public function update(UpdateUserRequest $request)
     {
-        return $this->userServices->update(
+        return $this->userService->update(
             $request->input('role'),
             $request->input('id'),
             $request->input('email'),
@@ -48,25 +50,27 @@ class UserController extends Controller
 
     public function status($id)
     {
-        return $this->userServices->status($id);
+        return $this->userService->status($id);
     }
 
     public function delete($id)
     {
-        return $this->userServices->delete($id);
+        $this->userService->delete($id);
+
+        return new SuccessResource('User deleted');
     }
 
-    public function listing(Request $request)
+    public function listing(Request $request): UserPaginationResource
     {
         $role = $request->input('role');
         $status = $request->input('status');
-
-        $start = $request->input('start');
         $length = $request->input('length');
         $keyword = $request->input('search');
         $orderBy = $request->input('order_by');
         $orderType = $request->input('order_type');
 
-        return $this->userServices->listing($role, $status, $keyword, $start, $length, $orderBy, $orderType);
+        $users = $this->userService->listing($role, $status, $keyword, $length, $orderBy, $orderType);
+
+        return UserPaginationResource::make($users);
     }
 }

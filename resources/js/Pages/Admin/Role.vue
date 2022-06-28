@@ -1,5 +1,6 @@
 <script setup>
-import BreezeAuthenticatedLayout from "@/Layouts/Authenticated.vue";
+import { onMounted, ref } from "vue";
+import AuthenticatedLayout from "@/Layouts/Authenticated.vue";
 import Modal from "@/Components/Modal.vue";
 import DeleteModal from "@/Components/DeleteModal.vue";
 import { Head } from "@inertiajs/inertia-vue3";
@@ -7,37 +8,33 @@ import Input from "@/Components/Input.vue";
 import InputError from "@/Components/InputError.vue";
 </script>
 <script>
-import DataTable from "@/Mixins/datatable"
+import DataTable from "@/Mixins/datatable";
 
 export default {
   mixins: [DataTable],
   data() {
     return {
-      selectedPermission: {
+      selectedRole: {
         name: "",
         description: "",
+        default_redirect: "",
       },
-      model: 'permission'
+      model: "role",
     };
   },
 };
 </script>
-
 <template>
-  <Head title="Permission" />
+  <Head title="Role" />
 
-  <BreezeAuthenticatedLayout>
-    <template #header>
-      <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        Permission
-      </h2>
-    </template>
+  <AuthenticatedLayout>
+    <template #header> Role </template>
 
     <DeleteModal
       @confirm="confirmDelete"
       @close="handleCloseModal"
       :modal-id="modalDeleteId"
-      :title="'Delete Permission'"
+      :title="'Delete Role'"
       :text-confirm="'Delete'"
       :textCancel="'Cancel'"
       :content="textDelete"
@@ -55,12 +52,12 @@ export default {
       <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-4">
         <div>
           <p class="mb-2 font-semibold text-gray-700">Name</p>
-          <Input v-model="selectedPermission.name" />
+          <Input v-model="selectedRole.name" />
           <InputError :message="errorMsg.name"></InputError>
         </div>
         <div>
           <p class="mb-2 font-semibold text-gray-700">Description</p>
-          <Input v-model="selectedPermission.description" />
+          <Input v-model="selectedRole.description" />
           <InputError :message="errorMsg.description"></InputError>
         </div>
       </div>
@@ -70,12 +67,8 @@ export default {
         <div class="overflow-hidden shadow-md">
           <!-- card header -->
           <div class="px-6 py-4 bg-white border-b border-gray-200 flex">
-            <h3 class="font-bold uppercase">Permission management</h3>
-            <button
-              @click="addItem "
-              class="tracking-wider text-white bg-emerald-500 px-4 py-1 text-sm rounded leading-loose mx-2 ml-auto font-semibold flex"
-              title=""
-            >
+            <h3 class="font-bold uppercase">Role management</h3>
+            <button @click="addItem" class="btn-add" title="">
               <img class="w-3 mt-2 mx-1" src="/imgs/plus-white.png" /> Add
             </button>
           </div>
@@ -85,23 +78,21 @@ export default {
             <div class="my-2 flex sm:flex-row flex-col">
               <div class="flex flex-row mb-1 sm:mb-0">
                 <div class="relative">
-                  <select
-                    v-model="length"
-                    @change="initTablePermissions"
-                    class="h-full rounded-l border block appearance-none w-full bg-white border-gray-400 text-gray-700 py-2 px-4 pr-8 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  >
+                  <select v-model="length" @change="initTable" class="select">
                     <option>5</option>
                     <option>10</option>
                     <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
                   </select>
                 </div>
               </div>
               <div class="block relative">
                 <input
                   v-model="search"
-                  @keyup="initTablePermissions"
+                  @keyup="initTable"
                   placeholder="Search"
-                  class="appearance-none rounded-r rounded-l sm:rounded-l-none border border-gray-400 border-b block pl-8 pr-6 py-2 w-full bg-white text-sm placeholder-gray-400 text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none"
+                  class="search"
                 />
               </div>
             </div>
@@ -112,41 +103,21 @@ export default {
                 <table class="min-w-full leading-normal">
                   <thead>
                     <tr>
-                      <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
-                      >
-                        Action
-                      </th>
-                      <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
-                      >
-                        Permission
-                      </th>
-                      <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
-                      >
-                        Description
-                      </th>
-                      <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
-                      >
-                        Created at
-                      </th>
-                      <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
-                      >
-                        Updated at
-                      </th>
+                      <th class="table-header">Action</th>
+                      <th class="table-header">Role</th>
+                      <th class="table-header">Description</th>
+                      <th class="table-header">Created at</th>
+                      <th class="table-header">Updated at</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr v-for="item in items">
+                    <tr v-for="item in items" :key="item.id">
                       <td
                         class="px-5 py-5 border-b border-gray-200 bg-white text-sm flex"
                       >
                         <button
                           @click="editItem(item)"
-                          class="tracking-wider text-white bg-blue-400 px-4 py-1 text-sm rounded leading-loose mx-2 font-semibold flex"
+                          class="btn-edit"
                           title=""
                         >
                           <img class="w-3 mt-2 mx-1" src="/imgs/pencil.png" />
@@ -154,7 +125,7 @@ export default {
                         </button>
                         <button
                           @click="deleteItem(item)"
-                          class="tracking-wider text-white bg-red-400 px-4 py-1 text-sm rounded leading-loose mx-2 font-semibold flex"
+                          class="btn-delete"
                           title=""
                         >
                           <img class="w-3 mt-2 mx-1" src="/imgs/trash.png" />
@@ -193,16 +164,8 @@ export default {
                     {{ total }} Entries
                   </span>
                   <div class="inline-flex mt-2 xs:mt-0">
-                    <button
-                      class="text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-l"
-                    >
-                      Prev
-                    </button>
-                    <button
-                      class="text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-r"
-                    >
-                      Next
-                    </button>
+                    <button class="btn-pagination">Prev</button>
+                    <button class="btn-pagination">Next</button>
                   </div>
                 </div>
               </div>
@@ -211,5 +174,5 @@ export default {
         </div>
       </div>
     </div>
-  </BreezeAuthenticatedLayout>
+  </AuthenticatedLayout>
 </template>
